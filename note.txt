@@ -1,0 +1,11 @@
+git st ==> svn st ==> su thay doi giua may minh va server
+
+git ci --> svn ci --> nhung chi la commit tren may minh 
+
+git push --> la chuyen cac commit len server
+
+git branch --> la branch version
+
+git coi moi version la tao ra 1 branch, va tu do no danh dau 1 cai moc. giong branch tren svn
+
+git config --list --> cho biet cac config hien tai, remoter la j, 
