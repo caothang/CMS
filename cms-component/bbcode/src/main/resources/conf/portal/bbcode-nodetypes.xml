@@ -1,5 +1,5 @@
 <nodeTypes xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
-  <nodeType name="exo:forumBBCode" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+  <nodeType name="exo:BBCode" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
     </supertypes>
@@ -25,14 +25,14 @@
     </propertyDefinitions>
   </nodeType>
   
-  <nodeType name="exo:forumBBCodeHome" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+  <nodeType name="exo:BBCodeHome" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
-      <supertype>nt:base</supertype>
+      <supertype>nt:unstructured</supertype>
     </supertypes> 
     <childNodeDefinitions>
-      <childNodeDefinition name="*" defaultPrimaryType="exo:forumBBCode" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" sameNameSiblings="false">
+      <childNodeDefinition name="*" defaultPrimaryType="exo:BBCode" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" sameNameSiblings="false">
         <requiredPrimaryTypes>
-          <requiredPrimaryType>exo:forumBBCode</requiredPrimaryType>
+          <requiredPrimaryType>exo:BBCode</requiredPrimaryType>
         </requiredPrimaryTypes>
       </childNodeDefinition>
     </childNodeDefinitions>

@@ -26,8 +26,8 @@
     xmlns="http://www.gatein.org/xml/ns/gatein_resources_1_2">
 
   <portlet-skin>
-    <application-name>poll</application-name>
-    <portlet-name>PollPortlet</portlet-name>
+    <application-name>cms</application-name>
+    <portlet-name>CMSPortlet</portlet-name>
     <skin-name>Default</skin-name>
     <css-path>/skin/DefaultSkin/webui/Stylesheet.css</css-path>
     <css-priority>1</css-priority>
@@ -35,8 +35,8 @@
   
   <javascript>
     <param>
-      <js-module>eXo.poll.UIPollPortlet</js-module>
-      <js-path>/javascript/eXo/poll/UIPollPortlet.js</js-path>
+      <js-module>eXo.cms.UICMSPortlet</js-module>
+      <js-path>/javascript/eXo/cms/UICMSPortlet.js</js-path>
       <js-priority>50</js-priority>
     </param>
   </javascript>

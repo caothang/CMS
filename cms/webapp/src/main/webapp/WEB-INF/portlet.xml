@@ -3,14 +3,14 @@
 					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 						 xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"> 
 	<portlet>
-		<description xml:lang="EN">Poll Portlet</description>
-		<portlet-name>PollPortlet</portlet-name>
-		<display-name xml:lang="EN">Poll Portlet</display-name>
+		<description xml:lang="EN">CMS Portlet</description>
+		<portlet-name>CMSPortlet</portlet-name>
+		<display-name xml:lang="EN">CMS Portlet</display-name>
 		<portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>		
 		
 		<init-param>
 			<name>webui.configuration</name>
-			<value>/WEB-INF/conf/portlet/poll/PollPortlet/webui/configuration.xml</value>
+			<value>/WEB-INF/conf/portlet/cms/CMSPortlet/webui/configuration.xml</value>
 		</init-param>
 
 		<expiration-cache>0</expiration-cache>
@@ -20,17 +20,17 @@
 			<portlet-mode>edit</portlet-mode>
 		</supports>
 		<supported-locale>en</supported-locale>
-		<resource-bundle>locale.portlet.poll.PollPortlet</resource-bundle>
+		<resource-bundle>locale.portlet.cms.CMSPortlet</resource-bundle>
 		<portlet-info>
-			<title>Poll Portlet</title>
-			<short-title>Poll Portlet</short-title>
-			<keywords>poll</keywords>
+			<title>CMS Portlet</title>
+			<short-title>CMS Portlet</short-title>
+			<keywords>cms</keywords>
 		</portlet-info>
 	
 		<portlet-preferences>
 			<preference>
-				<name>pollIdShow</name>
-				<value></value> <!-- PollId -->
+				<name>Show</name>
+				<value></value> <!--  -->
 				<read-only>false</read-only>
 			</preference>
 		</portlet-preferences>

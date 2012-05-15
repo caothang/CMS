@@ -51,7 +51,6 @@ import org.exoplatform.services.jcr.ext.app.SessionProviderService;
 import org.exoplatform.services.jcr.ext.common.SessionProvider;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.quartz.JobExecutionContext;
 import org.w3c.dom.Document;
 
 
@@ -245,16 +244,6 @@ public class CommonUtils {
    */
   public static <T>T getComponent(Class<T> type) {
     return type.cast(ExoContainerContext.getCurrentContainer().getComponentInstanceOfType(type));
-  }
-  
-  public static ExoContainer getExoContainer(JobExecutionContext context) {
-    if(context == null) return null;
-    String portalName = context.getJobDetail().getGroup();
-    if(portalName == null) {
-      portalName = PortalContainer.getCurrentPortalContainerName();
-    }
-    if(portalName.indexOf(COLON) > 0) portalName = portalName.substring(0, portalName.indexOf(":"));
-    return ExoContainerContext.getContainerByName(portalName);
   }
   
   public static String getRSSLink(String appType, String portalName, String objectId) {

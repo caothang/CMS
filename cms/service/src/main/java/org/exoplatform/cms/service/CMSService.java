@@ -14,28 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see<http://www.gnu.org/licenses/>.
  */
-package org.exoplatform.ks.common.jcr;
+package org.exoplatform.cms.service;
 
-import junit.framework.TestCase;
-
-import org.exoplatform.ks.common.jcr.KSDataLocation.Locations;
 
 /**
+ * Main Facade for all BBCode related operations
  * @author <a href="mailto:patrice.lamarque@exoplatform.com">Patrice Lamarque</a>
  * @version $Revision$
  */
-public class TestKSDataLocation extends TestCase {
-
-  protected void setUp() throws Exception {
-    super.setUp();
-  }
-
-  public void testGetUserSubscriptionLocation() {
-
-    KSDataLocation location = new KSDataLocation("");
-    String expected = Locations.BBCODE_HOME + "/FOO/forumSubscriptionFOO";
-
-
-  }
-
+public interface CMSService {
+  
 }

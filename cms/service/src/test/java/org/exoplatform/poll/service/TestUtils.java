@@ -19,6 +19,8 @@ package org.exoplatform.poll.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.exoplatform.cms.service.Utils;
+
 import junit.framework.TestCase;
 
 /**

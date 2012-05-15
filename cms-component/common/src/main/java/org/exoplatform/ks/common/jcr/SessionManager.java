@@ -16,6 +16,8 @@
  */
 package org.exoplatform.ks.common.jcr;
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.exoplatform.services.jcr.ext.common.SessionProvider;
@@ -41,6 +43,8 @@ public interface SessionManager {
    * @return
    */
   Session getSession(SessionProvider sessionProvider);
+
+  Node getRootNode(SessionProvider sProvider) throws RepositoryException;
 
   /**
    * <p>Returns the session currently associated with the current thread of execution.<br/>

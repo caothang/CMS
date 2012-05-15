@@ -56,43 +56,9 @@ public class KSDataLocation {
    */
   public static final String   DEFAULT_WORKSPACE_NAME  = "portal-system";
 
-  private String               forumHomeLocation;
-
-  private String               forumDataLocation;
-
-  private String               topicTypesLocation;
-
-  private String               forumSystemLocation;
-
-  private String               banIPLocation;
-
-  private String               statisticsLocation;
-
-  private String               administrationLocation;
-
-  private String               userProfilesLocation;
-
-  private String               forumCategoriesLocation;
-
-  private String               tagsLocation;
-
   private String               avatarsLocation;
 
-  private String               forumBanIPLocation;
-
   private String               bbcodesLocation;
-
-  private String               faqHomeLocation;
-
-  private String               forumStatisticsLocation;
-
-  private String               faqSettingsLocation;
-
-  private String               faqUserSettingsLocation;
-
-  private String               faqCategoriesLocation;
-
-  private String               faqTemplatesLocation;
 
   private NodeHierarchyCreator creator;
 
@@ -136,28 +102,9 @@ public class KSDataLocation {
    * Initializes all pathes with {@link #getPath(String)}
    */
   private void initPathes() {
-    forumHomeLocation = getPath(Locations.FORUM_SERVICE);
     avatarsLocation = getPath(Locations.KS_USER_AVATAR);
 
-    forumSystemLocation = getPath(Locations.FORUM_SYSTEM);
-    userProfilesLocation = getPath(Locations.USER_PROFILE_HOME);
-    statisticsLocation = getPath(Locations.STATISTIC_HOME);
-    forumStatisticsLocation = getPath(Locations.FORUM_STATISTIC);
-
-    administrationLocation = getPath(Locations.ADMINISTRATION_HOME);
-    banIPLocation = getPath(Locations.BANIP_HOME);
-    forumBanIPLocation = getPath(Locations.FORUM_BAN_IP);
-
-    forumDataLocation = getPath(Locations.FORUM_DATA);
-    topicTypesLocation = getPath(Locations.TOPIC_TYPE_HOME);
-    forumCategoriesLocation = getPath(Locations.FORUM_CATEGORIES_HOME);
-    tagsLocation = getPath(Locations.TAG_HOME);
     bbcodesLocation = getPath(Locations.BBCODE_HOME);
-    faqHomeLocation = getPath(Locations.FAQ_SERVICE);
-    faqSettingsLocation = getPath(Locations.SETTING_HOME);
-    faqUserSettingsLocation = getPath(Locations.USER_SETTING_HOME);
-    faqCategoriesLocation = getPath(Locations.FAQ_CATEGORIES_HOME);
-    faqTemplatesLocation = getPath(Locations.TEMPLATE_HOME);
   }
 
   /**
@@ -228,98 +175,10 @@ public class KSDataLocation {
 
   /**
    * 
-   * @return root path for Forum data
-   */
-  public String getForumHomeLocation() {
-    return forumHomeLocation;
-  }
-
-  /**
-   * 
-   * @return root path for forum user data
-   */
-  public String getForumDataLocation() {
-    return forumDataLocation;
-  }
-
-  /**
-   * 
-   * @return root path for all topic types
-   */
-  public String getTopicTypesLocation() {
-    return topicTypesLocation;
-  }
-
-  /**
-   * 
-   * @return root path for Forum internal data
-   */
-  public String getForumSystemLocation() {
-    return forumSystemLocation;
-  }
-
-  /**
-   * 
-   * @return root path for global bans
-   */
-  public String getBanIPLocation() {
-    return banIPLocation;
-  }
-
-  /**
-   *
-   * @return root path for all statistics
-   */
-  public String getStatisticsLocation() {
-    return statisticsLocation;
-  }
-
-  /**
-   * 
-   * @return root path for forum settings
-   */
-  public String getAdministrationLocation() {
-    return administrationLocation;
-  }
-
-  /**
-   * 
-   * @return root path for forum user profiles
-   */
-  public String getUserProfilesLocation() {
-    return userProfilesLocation;
-  }
-
-  /**
-   * 
-   * @return root path for forum categories
-   */
-  public String getForumCategoriesLocation() {
-    return forumCategoriesLocation;
-  }
-
-  /**
-   * 
-   * @return root path for all tags
-   */
-  public String getTagsLocation() {
-    return tagsLocation;
-  }
-
-  /**
-   * 
    * @return root path for all user avatars
    */
   public String getAvatarsLocation() {
     return avatarsLocation;
-  }
-
-  /**
-   * 
-   * @return root path for forum bans
-   */
-  public String getForumBanIPLocation() {
-    return forumBanIPLocation;
   }
 
   /**
@@ -330,65 +189,9 @@ public class KSDataLocation {
     return bbcodesLocation;
   }
 
-  /**
-   * 
-   * @return root path for FAQ
-   */
-  public String getFaqHomeLocation() {
-    return faqHomeLocation;
-  }
-
-  /**
-   * 
-   * @return location for FAQ settings
-   */
-  public String getFaqSettingsLocation() {
-    return faqSettingsLocation;
-  }
-
-  /**
-   * 
-   * @return root path for all user settings
-   */
-  public String getFaqUserSettingsLocation() {
-    return faqUserSettingsLocation;
-  }
-
-  /**
-   * 
-   * @return root path for FAQ cateogries
-   */
-  public String getFaqCategoriesLocation() {
-    return faqCategoriesLocation;
-  }
-
-  /**
-   * 
-   * @return path where FAQ templates are stored
-   */
-  public String getFaqTemplatesLocation() {
-    return faqTemplatesLocation;
-  }
-
-  /**
-   * 
-   * @return path where forum statistics are stored
-   */
-  public String getForumStatisticsLocation() {
-    return forumStatisticsLocation;
-  }
 
   public String toString() {
     return workspace;
-  }
-
-  /**
-   * Return the location of forum subscriptions for a given user
-   * @param userId user id
-   * @return
-   */
-  public String getUserSubscriptionLocation(String userId) {
-    return getUserProfilesLocation() + "/" + userId + "/forumSubscription" + userId;
   }
 
   /**
@@ -398,43 +201,9 @@ public class KSDataLocation {
    */
   public interface Locations {
 
-    public static final String FORUM_STATISTIC       = "forumStatistic";
+    public static final String KS_USER_AVATAR        = "UserAvatar";
 
-    public static final String TEMPLATE_HOME         = "templateHome";
-
-    public static final String USER_SETTING_HOME     = "userSettingHome";
-
-    public static final String SETTING_HOME          = "settingHome";
-
-    public static final String FAQ_SERVICE           = "faqApp";
-
-    public static final String USER_PROFILE_HOME     = "UserProfileHome";
-
-    public static final String ADMINISTRATION_HOME   = "AdministrationHome";
-
-    public static final String STATISTIC_HOME        = "StatisticHome";
-
-    public static final String BANIP_HOME            = "BanIPHome";
-
-    public static final String FORUM_BAN_IP          = "forumBanIP";
-
-    public static final String TOPIC_TYPE_HOME       = "TopicTypeHome";
-
-    public static final String TAG_HOME              = "TagHome";
-
-    public static final String FAQ_CATEGORIES_HOME   = "categories";
-
-    public static final String FORUM_CATEGORIES_HOME = "CategoryHome";
-
-    public static final String KS_USER_AVATAR        = "ksUserAvatar";
-
-    public static final String BBCODE_HOME           = "forumBBCode";
-
-    public static final String FORUM_DATA            = "ForumData";
-
-    public static final String FORUM_SYSTEM          = "ForumSystem";
-
-    public static final String FORUM_SERVICE         = "ForumService";
+    public static final String BBCODE_HOME           = "BBcodeService";
 
     public static final String DEFAULT_APPS_LOCATION = "exo:applications";
 

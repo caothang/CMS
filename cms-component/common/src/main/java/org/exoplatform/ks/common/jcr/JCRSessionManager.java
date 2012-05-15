@@ -16,6 +16,8 @@
  */
 package org.exoplatform.ks.common.jcr;
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.exoplatform.container.ExoContainerContext;
@@ -92,6 +94,11 @@ public class JCRSessionManager implements SessionManager {
     return session;
   }
 
+	public Node getRootNode(SessionProvider sessionProvider) throws RepositoryException {
+		return getSession(sessionProvider).getRootNode();
+	}
+  
+  
   /**
    * <p>Open and returns a session to the model. When the current thread is already associated with a previously
    * opened session the method will throw an <tt>IllegalStateException</tt>.</p>

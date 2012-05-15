@@ -60,8 +60,8 @@
 
                 <value>               
                   <object type="org.exoplatform.services.jcr.ext.hierarchy.impl.HierarchyConfig$JcrPath">                 
-                    <field  name="alias"><string>ksUserAvatar</string></field>
-                    <field  name="path"><string>/exo:applications/ksUserAvatar</string></field> 
+                    <field  name="alias"><string>UserAvatar</string></field>
+                    <field  name="path"><string>/exo:applications/UserAvatar</string></field> 
                     <field  name="nodeType"><string>nt:unstructured</string></field>                   
                     <field name="permissions">
                       <collection type="java.util.ArrayList">               
@@ -102,7 +102,7 @@
                 
                 <value>               
                   <object type="org.exoplatform.services.jcr.ext.hierarchy.impl.HierarchyConfig$JcrPath">                 
-                    <field  name="alias"><string>ForumSystem</string></field>
+                    <field  name="alias"><string>CMSSystem</string></field>
                    <field  name="path"><string>/exo:applications/CMSService/CMSSystem</string></field> 
                     <field  name="nodeType"><string>exo:cmsSystem</string></field>                   
                     <field name="permissions">
@@ -187,7 +187,7 @@
                  <value>               
                   <object type="org.exoplatform.services.jcr.ext.hierarchy.impl.HierarchyConfig$JcrPath">                 
                     <field  name="alias"><string>CMSData</string></field>                        
-                    <field  name="path"><string>/exo:applications/CMSService/ForumData</string></field> 
+                    <field  name="path"><string>/exo:applications/CMSService/CMSData</string></field> 
                     <field  name="nodeType"><string>exo:cmsData</string></field>                   
                     <field name="permissions">
                       <collection type="java.util.ArrayList">               
@@ -207,9 +207,9 @@
                 
                 <value>               
                   <object type="org.exoplatform.services.jcr.ext.hierarchy.impl.HierarchyConfig$JcrPath">                 
-                    <field  name="alias"><string>cmsBBCode</string></field>                        
+                    <field  name="alias"><string>BBcodeService</string></field>                        
                     <field  name="path"><string>/exo:applications/BBcodeService</string></field> 
-                    <field  name="nodeType"><string>exo:cmsBBCodeHome</string></field>                   
+                    <field  name="nodeType"><string>exo:BBCodeHome</string></field>                   
                     <field name="permissions">
                       <collection type="java.util.ArrayList">               
                         <value>                            

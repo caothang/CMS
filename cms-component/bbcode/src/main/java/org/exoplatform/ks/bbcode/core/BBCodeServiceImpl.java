@@ -22,6 +22,7 @@ import java.util.List;
 
 import javax.jcr.Node;
 import javax.jcr.NodeIterator;
+import javax.jcr.RepositoryException;
 import javax.jcr.query.Query;
 import javax.jcr.query.QueryManager;
 import javax.jcr.query.QueryResult;
@@ -54,9 +55,9 @@ import org.picocontainer.Startable;
 @ManagedDescription("BBCodes management")
 public class BBCodeServiceImpl implements Startable, BBCodeService, ManagementAware {
 
-  public final static String BBCODE_NODE_TYPE      = "exo:forumBBCode".intern();
+  public final static String BBCODE_NODE_TYPE      = "exo:BBCode".intern();
 
-  public final static String BBCODE_HOME_NODE_TYPE = "exo:forumBBCodeHome".intern();
+  public final static String BBCODE_HOME_NODE_TYPE = "exo:BBCodeHome".intern();
 
   private List<BBCodePlugin> plugins;
 
@@ -80,9 +81,9 @@ public class BBCodeServiceImpl implements Startable, BBCodeService, ManagementAw
     setDataLocator(dataLocator);
   }
 
-  private Node getBBcodeHome(SessionProvider sProvider) throws Exception {
+  private Node getBBcodeHome(SessionProvider sProvider) throws RepositoryException {
     String path = dataLocator.getBBCodesLocation();
-    return sessionManager.getSession(sProvider).getRootNode().getNode(path);
+    return sessionManager.getRootNode(sProvider).getNode(path);
   }
 
   /**
@@ -259,7 +260,6 @@ public class BBCodeServiceImpl implements Startable, BBCodeService, ManagementAw
         }
         QueryManager qm = bbCodeHome.getSession().getWorkspace().getQueryManager();
         StringBuilder pathQuery = new StringBuilder();
-        // new Query().path(bbCodeHome.getPath()).type(BBCODE_NODE_TYPE).predicate("@exo:isActive='true'").toString();
         pathQuery.append("/jcr:root").append(bbCodeHome.getPath()).append("/element(*,").append(BBCODE_NODE_TYPE).append(")[@exo:isActive='true']");
         Query query = qm.createQuery(pathQuery.toString(), Query.XPATH);
         QueryResult result = query.execute();
