@@ -20,7 +20,7 @@
 -->
 
 <webui-configuration> 
-  <ui-component-config id="UIUserToolBarForumPortlet">
+  <ui-component-config id="UserToolBarCMSPortlet">
     <type>org.exoplatform.portal.webui.application.UIGroovyPortlet</type>
     <lifecycle>org.exoplatform.groovy.webui.component.lifecycle.UIGroovyPortletLifecycle</lifecycle>
   </ui-component-config>

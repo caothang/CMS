@@ -10,7 +10,7 @@
 
 <div class="UICMSPortlet" id="$uicomponent.id">
 <h1>Wellcome CMS.</h1>
-<%=uicomponent.getFromSevice();>
+<%=uicomponent.getFromSevice(); %>
 	<div class="ParentMaskLayer">
 		<div id="KSMaskLayer" class="KSMaskLayer"><span></span></div>
 	</div>

@@ -37,12 +37,14 @@ function getModule(params) {
   module.component.common = new Project("org.hoahong.ks", "cms.component.common", "jar", module.version).
                             addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.webui", "jar", commonsVersion));
 
-  module.component.bbcode = new Project("org.hoahong.ks", "cms.component.bbcode", "jar", module.version);
+  module.component.bbcode = new Project("org.hoahong.ks", "cms.component.bbcode", "jar", module.version).
+              addDependency(new Project("org.hoahong.ks", "cms.component.rendering", "jar", module.version));
 
   
   // KS application common
   module.application = {};
   module.application.common = new Project("org.hoahong.ks", "cms.application.common", "jar", module.version).
+    addDependency(new Project("org.hoahong.ks", "cms.component.upgrade", "jar", module.version)).
     addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.upgrade", "jar", commonsVersion)).
     addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.product", "jar", commonsVersion));
 

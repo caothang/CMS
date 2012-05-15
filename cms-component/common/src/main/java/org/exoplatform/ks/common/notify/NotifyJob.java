@@ -52,23 +52,26 @@ public class NotifyJob implements Job {
       String name = context.getJobDetail().getName();
       Common common = new Common() ;
       NotifyInfo messageInfo = common.getMessageInfo(name) ;
-      List<String> emailAddresses = messageInfo.getEmailAddresses() ;
-      Message message = messageInfo.getMessage() ;
-      JobSchedulerService schedulerService = (JobSchedulerService)exoContainer.getComponentInstanceOfType(JobSchedulerService.class) ;
-      JobInfo info = new JobInfo(name, "KnowledgeSuite", context.getJobDetail().getJobClass());
-      if(message != null && emailAddresses != null && emailAddresses.size() > 0) {
-        List<String> sentMessages = new ArrayList<String>() ;
-        int countEmail = 0;
-        for(String address : emailAddresses) {
-          if(!sentMessages.contains(address)) {
-            message.setTo(address) ;
-            mailService.sendMessage(message) ;
-            sentMessages.add(address) ;
-            countEmail ++;
+      if(messageInfo != null) {
+        List<String> emailAddresses = messageInfo.getEmailAddresses() ;
+        Message message = messageInfo.getMessage() ;
+        JobInfo info = new JobInfo(name, "KnowledgeSuite", context.getJobDetail().getJobClass());
+        if(message != null && emailAddresses != null && emailAddresses.size() > 0) {
+          List<String> sentMessages = new ArrayList<String>() ;
+          int countEmail = 0;
+          for(String address : emailAddresses) {
+            if(!sentMessages.contains(address)) {
+              message.setTo(address) ;
+              mailService.sendMessage(message) ;
+              sentMessages.add(address) ;
+              countEmail ++;
+            }
           }
+          log_.info("Sent " + countEmail + " email.");
         }
+        JobSchedulerService schedulerService = (JobSchedulerService)exoContainer.getComponentInstanceOfType(JobSchedulerService.class) ;
+        schedulerService.removeJob(info) ;      
       }
-      schedulerService.removeJob(info) ;      
 
     } catch (Exception e) { 
       log_.error("Failed to execute email notification job", e)  ;  

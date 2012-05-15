@@ -17,28 +17,28 @@
         <value-param>
           <name>conf-path</name>
           <description>JCR configuration file</description>
-          <value>war:/cms-extension/jcr/repository-configuration.xml</value>
+          <value>war:/ks-extension/jcr/repository-configuration.xml</value>
         </value-param>
       </init-params>
     </component-plugin>
   </external-component-plugins>
-
-<!-- TODO : should be embbeded in jars-->
-  <external-component-plugins>
-	  <target-component>org.exoplatform.services.jcr.RepositoryService</target-component>      
-	  <component-plugin> 
-	    <name>add.ks.nodeType</name>
-	    <set-method>addPlugin</set-method>
-	    <type>org.exoplatform.services.jcr.impl.AddNodeTypePlugin</type>
-	    <init-params>
-	      <values-param>
-	        <name>autoCreatedInNewRepository</name>
-	        <description>Node types configuration file</description>
-	        <value>jar:/conf/portal/bbcode-nodetypes.xml</value>
-	        <value>jar:/conf/portal/cms-nodetypes.xml</value>
-	      </values-param>
-	    </init-params>
-	  </component-plugin>
-	</external-component-plugins>    
   
+  <external-component-plugins>
+		<target-component>org.exoplatform.services.jcr.RepositoryService</target-component>
+		<component-plugin>
+			<name>add.ks.nodeType</name>
+			<set-method>addPlugin</set-method>
+			<type>org.exoplatform.services.jcr.impl.AddNodeTypePlugin</type>
+			<init-params>
+				<values-param>
+					<name>autoCreatedInNewRepository</name>
+					<description>Node types configuration file</description>
+					<value>jar:/conf/portal/cms-nodetypes.xml</value>
+					<value>jar:/conf/portal/bbcode-nodetypes.xml</value>
+				</values-param>
+			</init-params>
+		</component-plugin>
+	</external-component-plugins>    
+	
+
 </configuration>

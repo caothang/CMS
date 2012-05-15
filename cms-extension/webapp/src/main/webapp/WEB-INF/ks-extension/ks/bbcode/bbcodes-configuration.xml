@@ -2,13 +2,12 @@
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
   xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
+  
   <component>
     <key>org.exoplatform.ks.bbcode.api.BBCodeService</key>
     <type>org.exoplatform.ks.bbcode.core.BBCodeServiceImpl</type>
-    <description>Manages CRUD operations on BBCodes</description>
-  </component>    
-  
-  
+  </component>
+
   <external-component-plugins>
     <target-component>org.exoplatform.ks.rendering.MarkupRenderingService</target-component>
     <component-plugin>

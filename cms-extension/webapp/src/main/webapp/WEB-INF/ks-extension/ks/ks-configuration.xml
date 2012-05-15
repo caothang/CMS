@@ -21,8 +21,11 @@
     <key>org.exoplatform.ks.common.image.ResizeImageService</key>
     <type>org.exoplatform.ks.common.image.impl.ResizeImageServiceImpl</type>
   </component>
-
   
+  <component>
+    <key>org.exoplatform.ks.rendering.MarkupRenderingService</key>
+    <type>org.exoplatform.ks.rendering.MarkupRenderingService</type>
+  </component>
 
   <!-- TODO : remove the following services when when they'll be provided by platform -->
   <component>

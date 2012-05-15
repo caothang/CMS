@@ -17,10 +17,7 @@
 
 package org.exoplatform.cms.service.impl;
 
-import java.util.List;
-
 import org.exoplatform.cms.service.CMSService;
-import org.exoplatform.container.component.ComponentPlugin;
 import org.exoplatform.container.xml.InitParams;
 import org.exoplatform.ks.common.jcr.KSDataLocation;
 import org.exoplatform.management.jmx.annotations.NameTemplate;

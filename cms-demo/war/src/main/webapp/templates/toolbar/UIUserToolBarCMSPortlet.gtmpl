@@ -12,11 +12,11 @@
 	jsmanager.addCustomizedOnLoadScript('eXo.portal.UIAdminToolbar.onLoad("' + uicomponent.id + '");');
 	
 	PortalURL nodeURL = nodeurl();
-  NavigationResource resource = new NavigationResource(SiteType.PORTAL, Util.getPortalRequestContext().getPortalOwner(), "poll");
+  NavigationResource resource = new NavigationResource(SiteType.PORTAL, Util.getPortalRequestContext().getPortalOwner(), "cms");
   String portalURI = nodeURL.setResource(resource).toString();
 %>
 <ul class="UIUserToolBarPollPortlet UIHorizontalTabs" id="$uicomponent.id">
 	<li class="UITab NormalToolbarTab">
- 	   <a class="PollIcon TBIcon" href="$portalURI">Poll</a>
+ 	   <a class="PollIcon TBIcon" href="$portalURI">CMS</a>
 	</li>
 </ul>

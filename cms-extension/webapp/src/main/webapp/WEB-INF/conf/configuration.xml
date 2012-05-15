@@ -6,9 +6,6 @@
   <!-- knowledge workspace and load nodetypes -->
   <import>war:/ks-extension/jcr/jcr-configuration.xml</import> 
 
-  <!-- KS data storage tree -->
-  <import>war:/ks-extension/jcr/storage-configuration.xml</import> 
-  
   <!-- main KS configuration  -->
   <import>war:/ks-extension/ks/ks-configuration.xml</import>
     
@@ -20,5 +17,8 @@
 
   <!-- CMS core services -->
   <import>war:/ks-extension/ks/cms/cms-configuration.xml</import>
+  
+  <!-- KS data storage tree -->
+  <import>war:/ks-extension/jcr/storage-configuration.xml</import> 
   
 </configuration>
