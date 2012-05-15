@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
+  xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
+
+  <component>
+    <key>org.exoplatform.ks.common.jcr.KSDataLocation</key>
+    <type>org.exoplatform.ks.common.jcr.KSDataLocation</type>
+    <description>Holds JCR storage location for KS data</description>
+    <init-params>
+      <value-param>
+        <name>workspace</name>
+        <description>workspace for KS data</description>
+        <value>knowledge</value>
+      </value-param>
+    </init-params>
+  </component>
+
+  <component>
+    <key>org.exoplatform.ks.common.image.ResizeImageService</key>
+    <type>org.exoplatform.ks.common.image.impl.ResizeImageServiceImpl</type>
+  </component>
+  
+  <component>
+    <key>org.exoplatform.ks.rendering.MarkupRenderingService</key>
+    <type>org.exoplatform.ks.rendering.MarkupRenderingService</type>
+  </component>
+
+  <!-- TODO : remove the following services when when they'll be provided by platform -->
+  <component>
+    <key>org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator</key>
+    <type>org.exoplatform.services.jcr.ext.hierarchy.impl.NodeHierarchyCreatorImpl</type>
+  </component>
+
+
+  <component>
+    <type>org.exoplatform.services.scheduler.impl.QuartzSheduler</type>
+  </component>
+
+  <component>
+    <type>org.exoplatform.services.scheduler.QueueTasks</type>
+  </component>
+
+  <component>
+    <key>org.exoplatform.services.scheduler.JobSchedulerService</key>
+    <type>org.exoplatform.services.scheduler.impl.JobSchedulerServiceImpl</type>
+  </component>
+
+
+
+  <external-component-plugins>
+    <target-component>org.exoplatform.services.scheduler.JobSchedulerService</target-component>
+    <!--Forum send email notification configuration-->
+    <component-plugin>
+      <name>CMSSendNotificationJob</name>
+      <set-method>addPeriodJob</set-method>
+      <type>org.exoplatform.services.scheduler.PeriodJob</type>
+      <description>send email notification</description>
+      <init-params>
+        <properties-param>
+          <name>job.info</name>
+          <description>save the monitor data periodically</description>
+          <property name="jobName" value="SendMailJob" />
+          <property name="groupName" value="KnowlegedSuite" />
+          <property name="job" value="org.exoplatform.ks.common.notify.NotifyJob" />
+          <property name="repeatCount" value="0" />
+          <property name="period" value="120000" /> <!-- 2 mins-->
+          <property name="startTime" value="+0" />
+          <property name="endTime" value="" />
+        </properties-param>
+      </init-params>
+    </component-plugin>
+  </external-component-plugins>
+   
+
+</configuration>
