@@ -18,18 +18,13 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-
-<messagebundle>
-  <msg name="title">Sondage</msg>
-  <msg name="setting">Paramètre</msg>
-  <msg name="vote">Voter</msg>
-  <msg name="voteAgain">Voter à nouveau</msg>
-  <msg name="warning">Veuillez choisir une option.</msg>
-  <msg name="option">Options</msg>
-  <msg name="percent">Pour cent</msg>
-  <msg name="voter">votants</msg>
-  <msg name="total">Total</msg>
-  <msg name="discuss">Discutez sur forum</msg>
-  <msg name="nopoll">Il n'y a aucun sondage...</msg>
-  <msg name="createPoll">Créez votre sondage sur</msg>    
-</messagebundle>
+<Context path='/cmsdemo' docBase='cmsdemo' debug='0' reloadable='true' crossContext='true' privileged='true'>
+  <Logger className='org.apache.catalina.logger.SystemOutLogger'
+          prefix='localhost_portal_log.' suffix='.txt' timestamp='true'/>
+  <Manager className='org.apache.catalina.session.PersistentManager' saveOnRestart='false'/>
+  <Realm className='org.apache.catalina.realm.JAASRealm'
+         appName='gatein-domain-cmsdemo'
+         userClassNames='org.exoplatform.services.security.jaas.UserPrincipal'
+         roleClassNames='org.exoplatform.services.security.jaas.RolePrincipal'
+         debug='0' cache='false'/>
+	 <Valve className='org.apache.catalina.authenticator.FormAuthenticator' characterEncoding='UTF-8'/></Context>

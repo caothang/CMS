@@ -46,6 +46,12 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>org.hoahong.ks</groupId>
+      <artifactId>cms.component.rendering</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>

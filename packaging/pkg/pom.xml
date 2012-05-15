@@ -8,7 +8,7 @@
   </parent>
   <artifactId>cms.packaging.assembly</artifactId>
   <packaging>pom</packaging>
-  <name>eXo Forum Packaging Assemblies</name>
+  <name>CMS Packaging Assemblies</name>
   <properties>
     <gatein.working.dir>${basedir}/target</gatein.working.dir>
   </properties>
@@ -620,152 +620,7 @@
       <version>${org.gatein.wsrp.version}</version>
     </dependency>
 
-    <!-- wiki dependencies -->
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-servlet</artifactId>
-      <version>${gwt.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-user</artifactId>
-      <version>${gwt.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-      <version>${javax.validation.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.python</groupId>
-      <artifactId>jython-standalone</artifactId>
-      <version>${jython-standalone.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>pygments</groupId>
-      <artifactId>pygments</artifactId>
-      <version>${pygments.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>${org.apache.commons.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sourceforge.htmlcleaner</groupId>
-      <artifactId>htmlcleaner</artifactId>
-      <version>${net.sourceforge.htmlcleaner.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-configuration-api</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-context</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-component-api</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-component-default</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-properties</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-xml</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-script</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.commons</groupId>
-      <artifactId>xwiki-commons-legacy-component</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-api</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-syntax-wikimodel</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-syntax-xwiki2</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-syntax-xhtml</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-transformation-icon</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-macro-box</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.rendering</groupId>
-      <artifactId>xwiki-rendering-macro-message</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-rendering-macro-code</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-model</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-        <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-wysiwyg-client</artifactId>
-      <version>${org.xwiki.platform.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.wikimodel</groupId>
-      <artifactId>org.wikimodel.wem</artifactId>
-      <version>${org.wikimodel.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.suigeneris</groupId>
-      <artifactId>jrcs.diff</artifactId>
-      <version>${org.suigeneris.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.suigeneris</groupId>
-      <artifactId>jrcs.rcs</artifactId>
-      <version>${org.suigeneris.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>ecs</groupId>
-      <artifactId>ecs</artifactId>
-      <version>${ecs.version}</version>
-    </dependency>
+   
 
     <dependency>
       <groupId>org.hoahong.ks</groupId>
@@ -775,7 +630,7 @@
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
       <groupId>org.hoahong.ks</groupId>
-      <artifactId>cms.demo.rest-forumdemo</artifactId>
+      <artifactId>cms.demo.rest-cmsdemo</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->

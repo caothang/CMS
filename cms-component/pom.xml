@@ -11,6 +11,7 @@
   <name>CMS Components</name>
   <modules>
     <module>common</module>
+    <module>rendering</module>
     <module>bbcode</module>
   </modules>
 </project>

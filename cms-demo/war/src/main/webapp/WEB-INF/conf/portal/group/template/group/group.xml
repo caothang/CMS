@@ -87,7 +87,7 @@
      
      <portlet-application>
        <portlet>
-         <application-ref>forumdemo</application-ref>
+         <application-ref>cmsdemo</application-ref>
          <portlet-ref>KSDemoCSSControlerPortlet</portlet-ref>
        </portlet>
        <access-permissions>Everyone</access-permissions>
