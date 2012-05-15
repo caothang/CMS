@@ -32,7 +32,7 @@ import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
     events = {
     }
 )
-public class UICMSManagement extends BasePollForm {
+public class UICMSManagement extends BaseCMSForm {
   public static final String FIELD_SELECT_POLL_SELECTBOX = "selectPoll";
 
 

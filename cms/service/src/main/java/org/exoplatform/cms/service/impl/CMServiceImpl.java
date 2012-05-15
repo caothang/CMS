@@ -45,14 +45,19 @@ public class CMServiceImpl implements Startable, CMSService {
 
   public void start() {
     try {
-      log.info("initializing Poll default data...");
+      log.info("initializing cms default data...");
     } catch (Exception e) {
-      log.error("Failed to initializing default data for poll: ", e);
+      log.error("Failed to initializing default data for cms: ", e);
     }
   }
 
   public void stop() {
   }
+
+	@Override
+	public String getContentTest() {
+		return "<br/><h2> Data content test from service.....</h2>";
+	}
 
 
 }

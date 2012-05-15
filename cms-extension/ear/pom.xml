@@ -94,16 +94,6 @@
               <bundleFileName>cmsResources.war</bundleFileName>
             </webModule>
             <jarModule>
-              <groupId>com.google.gwt</groupId>
-              <artifactId>gwt-user</artifactId>
-              <includeInApplicationXml>true</includeInApplicationXml>
-            </jarModule>
-            <jarModule>
-              <groupId>com.google.gwt</groupId>
-              <artifactId>gwt-servlet</artifactId>
-              <includeInApplicationXml>true</includeInApplicationXml>
-            </jarModule>
-            <jarModule>
               <groupId>org.slf4j</groupId>
               <artifactId>slf4j-api</artifactId>
               <excluded>true</excluded>

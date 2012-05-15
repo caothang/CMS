@@ -24,4 +24,5 @@ package org.exoplatform.cms.service;
  */
 public interface CMSService {
   
+	public String getContentTest() ;
 }

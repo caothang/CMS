@@ -53,14 +53,14 @@
       <name>CMSSendNotificationJob</name>
       <set-method>addPeriodJob</set-method>
       <type>org.exoplatform.services.scheduler.PeriodJob</type>
-      <description>update logged in user information to forum service</description>
+      <description>send email notification</description>
       <init-params>
         <properties-param>
           <name>job.info</name>
           <description>save the monitor data periodically</description>
           <property name="jobName" value="SendMailJob" />
           <property name="groupName" value="KnowlegedSuite" />
-          <property name="job" value="org.hoahong.cms.service.conf.SendMailJob" />
+          <property name="job" value="org.exoplatform.ks.common.notify.NotifyJob" />
           <property name="repeatCount" value="0" />
           <property name="period" value="120000" /> <!-- 2 mins-->
           <property name="startTime" value="+0" />
@@ -68,7 +68,7 @@
         </properties-param>
       </init-params>
     </component-plugin>
-
+  </external-component-plugins>
    
 
 </configuration>

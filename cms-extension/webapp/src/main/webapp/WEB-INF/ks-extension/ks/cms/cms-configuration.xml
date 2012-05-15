@@ -5,12 +5,11 @@
    xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
 
   <component>
-    <key>org.hoahong.cms.service.CMSService</key>
-    <type>org.hoahong.cms.service.impl.CMSServiceImpl</type>
+    <key>org.exoplatform.cms.service.CMSService</key>
+    <type>org.exoplatform.cms.service.impl.CMServiceImpl</type>
   </component>
-
-	<component>
-    <type>org.hoahong.cms.service.ws.CMSWebservice</type>
+  <component>
+    <type>org.exoplatform.cms.service.ws.CMSWebservice</type>
   </component>
   
 </configuration>

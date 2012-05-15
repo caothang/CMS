@@ -42,19 +42,20 @@ function getModule(params) {
   
   // KS application common
   module.application = {};
-  module.application.common = new Project("org.hoahong.ks", "cms.application.common", "jar", module.version);
-
+  module.application.common = new Project("org.hoahong.ks", "cms.application.common", "jar", module.version).
+    addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.upgrade", "jar", commonsVersion)).
+    addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.product", "jar", commonsVersion));
 
 
   // CMS
-  module.poll = 
+  module.cms = 
     new Project("org.hoahong.ks", "cms.webapp", "war", module.version) .
     addDependency(new Project("org.hoahong.ks", "cms.service", "jar",  module.version));
-  module.poll.deployName = "poll";
+  module.cms.deployName = "cms";
 
   // KS we resources and services
   module.web = {}
-  module.web.forumResources = 
+  module.web.cmsResources = 
     new Project("org.hoahong.ks", "cms.web.cmsResources", "war", module.version) ;
 
   // KS extension for tomcat
