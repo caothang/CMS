@@ -1,5 +1,4 @@
 @import url('popup/Stylesheet.css') ;
-@import url('UIPoll/Stylesheet.css') ;
 
 
 body, html, div, table, tr, td, img, form {
@@ -14,7 +13,7 @@ ul, li {
     padding: 0;
 }
 
-.UIPollPortlet {
+.UICMSPortlet {
 	border: solid 1px red;
 	width: 100%;	
 }
