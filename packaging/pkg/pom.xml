@@ -44,6 +44,21 @@
       <type>js</type>
     </dependency>
 
+	<dependency>
+		<groupId>org.exoplatform.commons</groupId>
+		<artifactId>exo.platform.commons.webui</artifactId>
+		<version>${org.exoplatform.commons.version}</version>
+		<type>jar</type>
+	</dependency><!-- 1.1.8-->
+
+	
+	<dependency>
+		<groupId>org.chromattic</groupId>
+		<artifactId>chromattic.core</artifactId>
+		<version>${org.chromattic.version}</version>
+		<type>jar</type>
+	</dependency><!-- 1.1.2-->
+	
     <dependency>
       <groupId>org.exoplatform.core</groupId>
       <artifactId>core.packaging.module</artifactId>
