@@ -249,6 +249,9 @@
 			<propertyDefinition name="exo:userId" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 			</propertyDefinition>
+			<propertyDefinition name="exo:activeKey" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>
 			<propertyDefinition name="exo:fullName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
@@ -318,6 +321,7 @@
 					<defaultValue>0</defaultValue>
 				</defaultValues>
 			</propertyDefinition>
+			<!-- cai nay nham liet ke so cong viec phai lam cua moderators -->
 			<propertyDefinition name="exo:jobWattingForModerator" requiredType="Long" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
@@ -331,14 +335,20 @@
 					<defaultValue> </defaultValue>
 				</defaultValues>
 			</propertyDefinition>
-						<!-- products posted, applied for buyers -->
+			<!-- products posted, applied for buyers -->
 			<propertyDefinition name="exo:totalBuy" requiredType="Long" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
 					<defaultValue>0</defaultValue>
 				</defaultValues>
 			</propertyDefinition>
-			
+			<propertyDefinition name="exo:productBought" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="true">
+				<valueConstraints/>
+				<defaultValues>
+					<defaultValue> </defaultValue>
+				</defaultValues>
+			</propertyDefinition>
+
 			<propertyDefinition name="exo:isActive" requiredType="Boolean" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
@@ -371,6 +381,10 @@
 				<valueConstraints/>
 			</propertyDefinition>
 			<propertyDefinition name="exo:banReason" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>
+
+			<propertyDefinition name="exo:note" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 			</propertyDefinition>
 
