@@ -25,5 +25,6 @@ package org.exoplatform.cms.service;
 public class CategoryProduct {
   String name;
   String categoryId;
+  String parentId;
 //....
 }
