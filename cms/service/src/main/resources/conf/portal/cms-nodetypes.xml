@@ -144,9 +144,9 @@
 			<supertype>nt:base</supertype>
 		</supertypes>
 		<childNodeDefinitions>
-			<childNodeDefinition name="*" defaultPrimaryType="exo:categoryProductHome" autoCreated="false" mandatory="false" onParentVersion="VERSION" protected="false" sameNameSiblings="false">
+			<childNodeDefinition name="*" defaultPrimaryType="exo:categoryProduct" autoCreated="false" mandatory="false" onParentVersion="VERSION" protected="false" sameNameSiblings="false">
 				<requiredPrimaryTypes>
-					<requiredPrimaryType>exo:categoryProductHome</requiredPrimaryType>
+					<requiredPrimaryType>exo:categoryProduct</requiredPrimaryType>
 				</requiredPrimaryTypes>
 			</childNodeDefinition>
 		</childNodeDefinitions>
@@ -158,7 +158,13 @@
 		</supertypes>
 		<propertyDefinitions>
 
+			<propertyDefinition name="exo:manufactureID" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
 			<propertyDefinition name="exo:name" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:order" requiredType="Interger" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
 			</propertyDefinition>
 
@@ -191,7 +197,28 @@
 		</supertypes>
 		<propertyDefinitions>
 
+	<propertyDefinition name="exo:partnerID" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
 			<propertyDefinition name="exo:name" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:address" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:contactsPhone" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="true">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:website" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:contactInfor" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:type" requiredType="Integer" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints />
+			</propertyDefinition>
+			<propertyDefinition name="exo:node" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
 			</propertyDefinition>
 
@@ -252,32 +279,31 @@
 			<propertyDefinition name="exo:activeKey" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 			</propertyDefinition>
-			<propertyDefinition name="exo:fullName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+			<propertyDefinition name="exo:userName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
-				<defaultValues>
-					<defaultValue> </defaultValue>
-				</defaultValues>
-			</propertyDefinition>
-			<propertyDefinition name="exo:firstName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+			</propertyDefinition>			
+			<propertyDefinition name="exo:passWord" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
-				<defaultValues>
-					<defaultValue> </defaultValue>
-				</defaultValues>
-			</propertyDefinition>
-			<propertyDefinition name="exo:lastName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
-				<valueConstraints/>
-				<defaultValues>
-					<defaultValue> </defaultValue>
-				</defaultValues>
-			</propertyDefinition>
-			
-			<!-- contact via email with user: gmail, yahoo, facebook... -->
+			</propertyDefinition>			
+				<!-- contact via email with user: gmail, yahoo, facebook... -->
 			<propertyDefinition name="exo:email" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="true">
 				<valueConstraints/>
-				<defaultValues>
-					<defaultValue> </defaultValue>
-				</defaultValues>
-			</propertyDefinition>
+			</propertyDefinition>			
+			<propertyDefinition name="exo:fullName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>			
+			<propertyDefinition name="exo:firstName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>			
+			<propertyDefinition name="exo:lastName" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>			
+			<propertyDefinition name="exo:province" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>			
+			<propertyDefinition name="exo:address" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+			</propertyDefinition>				
 			<!-- contact online with user: skype, yahoo, facebook... -->
 			<propertyDefinition name="exo:contactsOnline" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="true">
 				<valueConstraints/>
@@ -285,19 +311,15 @@
 					<defaultValue> </defaultValue>
 				</defaultValues>
 			</propertyDefinition>
-
 			<!-- contact by phone with user: telephone, mobile-phone, work-phone, home-phone ... -->
 			<propertyDefinition name="exo:contactsPhone" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="true">
 				<valueConstraints/>
-				<defaultValues>
-					<defaultValue> </defaultValue>
-				</defaultValues>
-			</propertyDefinition>
-
-			<propertyDefinition name="exo:userTitle" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+			</propertyDefinition>			
+			<!-- ip address of user -->
+			<propertyDefinition name="exo:ip" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
-					<defaultValue>User</defaultValue>
+					<defaultValue></defaultValue>
 				</defaultValues>
 			</propertyDefinition>
 			<!-- default users is buyer role is 10 -->
@@ -307,7 +329,12 @@
 					<defaultValue>10</defaultValue>
 				</defaultValues>
 			</propertyDefinition>
-
+			<propertyDefinition name="exo:viewNow" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+				<defaultValues>
+					<defaultValue></defaultValue>
+				</defaultValues>
+			</propertyDefinition>
 			<propertyDefinition name="exo:signature" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
@@ -322,7 +349,7 @@
 				</defaultValues>
 			</propertyDefinition>
 			<!-- cai nay nham liet ke so cong viec phai lam cua moderators -->
-			<propertyDefinition name="exo:jobWattingForModerator" requiredType="Long" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+			<propertyDefinition name="exo:jobWattingForModerator" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
 					<defaultValue>0</defaultValue>
@@ -345,54 +372,36 @@
 			<propertyDefinition name="exo:productBought" requiredType="String" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="true">
 				<valueConstraints/>
 				<defaultValues>
-					<defaultValue> </defaultValue>
-				</defaultValues>
-			</propertyDefinition>
-
-			<propertyDefinition name="exo:isActive" requiredType="Boolean" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
-				<valueConstraints/>
-				<defaultValues>
 					<defaultValue>0</defaultValue>
 				</defaultValues>
 			</propertyDefinition>
-			
-			
 			<propertyDefinition name="exo:lastLoginDate" requiredType="Date" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 			</propertyDefinition>
 			<propertyDefinition name="exo:joinedDate" requiredType="Date" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 			</propertyDefinition>
-
-			<propertyDefinition name="exo:timeZone" requiredType="Double" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
-				<valueConstraints/>
-				<defaultValues>
-					<defaultValue>0.0</defaultValue>
-				</defaultValues>
-			</propertyDefinition>
-			
 			<propertyDefinition name="exo:isBanned" requiredType="Boolean" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 				<defaultValues>
 					<defaultValue>false</defaultValue>
 				</defaultValues>
 			</propertyDefinition>
-			<propertyDefinition name="exo:banUntil" requiredType="Long" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
-				<valueConstraints/>
-			</propertyDefinition>
-			<propertyDefinition name="exo:banReason" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
-				<valueConstraints/>
-			</propertyDefinition>
-
 			<propertyDefinition name="exo:note" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
+			</propertyDefinition>
+			<propertyDefinition name="exo:isActive" requiredType="Boolean" autoCreated="true" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
+				<valueConstraints/>
+				<defaultValues>
+					<defaultValue>0</defaultValue>
+				</defaultValues>
 			</propertyDefinition>
 
 		</propertyDefinitions>
 		<childNodeDefinitions>
-			<childNodeDefinition name="*" defaultPrimaryType="exo:forumSubscription" autoCreated="false" mandatory="false" onParentVersion="VERSION" protected="false" sameNameSiblings="false">
+			<childNodeDefinition name="*" defaultPrimaryType="exo:attachments" autoCreated="false" mandatory="false" onParentVersion="VERSION" protected="false" sameNameSiblings="false">
 				<requiredPrimaryTypes>
-					<requiredPrimaryType>exo:attachment</requiredPrimaryType>
+					<requiredPrimaryType>exo:attachments</requiredPrimaryType>
 				</requiredPrimaryTypes>
 			</childNodeDefinition>
 		</childNodeDefinitions>
@@ -411,13 +420,11 @@
 		</childNodeDefinitions>
 	</nodeType>
 
-
 	<nodeType name="exo:cmsSystem" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
 		<supertypes>
 			<supertype>nt:base</supertype>
 		</supertypes>
 		<childNodeDefinitions>
-
 			<childNodeDefinition name="*" defaultPrimaryType="exo:userHome" autoCreated="false" mandatory="false" onParentVersion="VERSION" protected="false" sameNameSiblings="false">
 				<requiredPrimaryTypes>
 					<requiredPrimaryType>exo:userHome</requiredPrimaryType>
