@@ -206,7 +206,7 @@
 		</supertypes>
 		<propertyDefinitions>
 
-			<propertyDefinition name="exo:ID" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
+			<propertyDefinition name="exo:id" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
 			</propertyDefinition>
 			<propertyDefinition name="exo:name" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
@@ -245,7 +245,7 @@
 		</supertypes>
 		<propertyDefinitions>
 
-	<propertyDefinition name="exo:ID" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
+	    <propertyDefinition name="exo:id" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
 			</propertyDefinition>
 			<propertyDefinition name="exo:name" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
@@ -321,7 +321,7 @@
 			<supertype>nt:base</supertype>
 		</supertypes>
 		<propertyDefinitions>
-			<propertyDefinition name="exo:Id" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
+			<propertyDefinition name="exo:id" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints/>
 			</propertyDefinition>
 			<propertyDefinition name="exo:activeKey" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
