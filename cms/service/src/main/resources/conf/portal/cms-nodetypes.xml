@@ -20,6 +20,7 @@
 		</propertyDefinitions>
 	</nodeType>
 
+
 	<nodeType name="exo:Product" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
 		<supertypes>
 			<supertype>nt:base</supertype>
@@ -27,6 +28,7 @@
 		<propertyDefinitions>
 			<propertyDefinition name="exo:id" requiredType="Long" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
+				</propertyDefinition>
 				<propertyDefinition name="exo:code" requiredType="String" autoCreated="true" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
 			</propertyDefinition>
@@ -113,7 +115,7 @@
 			</propertyDefinition>
 			<propertyDefinition name="exo:isActive" requiredType="Boolean" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
 				<valueConstraints />
-			</propertyDefinition>
+		</propertyDefinition>
 		</propertyDefinitions>
 		<childNodeDefinitions>
 			<childNodeDefinition name="*" defaultPrimaryType="exo:attachments" autoCreated="false" mandatory="false" onParentVersion="VERSION" protected="false" sameNameSiblings="false">
