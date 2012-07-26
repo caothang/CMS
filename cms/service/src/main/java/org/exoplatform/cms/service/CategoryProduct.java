@@ -22,9 +22,9 @@ package org.exoplatform.cms.service;
  *          chuasonlam8484@gmail.com
  * Jun 9, 2012  
  */
+ 
 public class CategoryProduct {
+  Long id;
   String name;
-  String categoryId;
-  String parentId;
-//....
+  
 }

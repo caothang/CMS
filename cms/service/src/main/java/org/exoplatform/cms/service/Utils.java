@@ -31,8 +31,8 @@ import org.apache.commons.lang.StringUtils;
  *          tu.duy@exoplatform.com
  * Apr 28, 2011  
  */
-public class Utils {
-  public static final String COLON = ":".intern();
+public class Utils implements CMSNodeTypes{
+  public static final String MANUFACTURER = "manufacturer".intern();
 
   public static Calendar getGreenwichMeanTime() {
     Calendar calendar = GregorianCalendar.getInstance();
