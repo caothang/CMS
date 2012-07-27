@@ -26,53 +26,53 @@ import java.util.Date;
  */
 public class CmsUser {
 
-  String   id;
+  private String   id;
 
-  String   activeKey;
+  private String   activeKey;
 
-  String[] email;
+  private String[] email;
 
-  String   fullName;
+  private String   fullName;
 
-  String   firstName;
+  private String   firstName;
 
-  String   lastName;
+  private String   lastName;
 
-  String   province;
+  private String   province;
 
-  String   address;
+  private String   address;
 
-  String[] contactsOnline;
+  private String[] contactsOnline;
 
-  String[] contactsPhone;
+  private String[] contactsPhone;
 
-  String   ip;
+  private String   ip;
 
-  long     userRole;
+  private long     userRole;
 
-  String   viewNow;
+  private String   viewNow;
 
-  String   signature;
+  private String   signature;
 
-  long     totalProduct;
+  private long     totalProduct;
 
-  String   jobWattingForModerator;
+  private String   jobWattingForModerator;
 
-  String[] moderates;
+  private String[] moderates;
 
-  long     totalBuy;
+  private long     totalBuy;
 
-  String[] productBought;
+  private String[] productBought;
 
-  Date     lastLoginDate;
+  private Date     lastLoginDate;
 
-  Date     joinedDate;
+  private Date     joinedDate;
 
-  boolean  isBanned;
+  private boolean  isBanned;
 
-  String   note;
+  private String   note;
 
-  boolean  isActive;
+  private boolean  isActive;
 
   public CmsUser() {
   }
