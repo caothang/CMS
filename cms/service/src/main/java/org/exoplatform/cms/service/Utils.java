@@ -16,14 +16,9 @@
  */
 package org.exoplatform.cms.service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.HashSet;
 import java.util.List;
-
-import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by The eXo Platform SAS
@@ -31,7 +26,7 @@ import org.apache.commons.lang.StringUtils;
  *          tu.duy@exoplatform.com
  * Apr 28, 2011  
  */
-public class Utils implements CMSNodeTypes{
+public class Utils implements CMSNodeTypes {
   public static final String MANUFACTURER = "manufacturer".intern();
 
   public static Calendar getGreenwichMeanTime() {
@@ -57,5 +52,5 @@ public class Utils implements CMSNodeTypes{
     }
     return true;
   }
-  
+
 }

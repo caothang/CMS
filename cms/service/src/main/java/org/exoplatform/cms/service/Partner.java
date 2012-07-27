@@ -24,17 +24,27 @@ import org.exoplatform.services.jcr.util.IdGenerator;
  *          duytucntt@gmail.com
  * Jul 26, 2012  
  */
-public class Manufacturer {
-  public static final String MANUFACTURER = "Manufacturer";
+public class Partner {
+  public static final String PARTNER = "Partner";
 
   private String             id;
 
   private String             name;
 
-  private int                order;
+  private String             address;
 
-  public Manufacturer() {
-    id = MANUFACTURER.concat(IdGenerator.generate());
+  private String[]           contactsPhone;
+
+  private String             website;
+
+  private String             contactInfor;
+
+  private int                type;
+
+  private String             note;
+
+  public Partner() {
+    id = PARTNER.concat(IdGenerator.generate());
   }
 
   public String getId() {
@@ -53,12 +63,52 @@ public class Manufacturer {
     this.name = name;
   }
 
-  public int getOrder() {
-    return order;
+  public String getAddress() {
+    return address;
   }
 
-  public void setOrder(int order) {
-    this.order = order;
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public String[] getContactsPhone() {
+    return contactsPhone;
+  }
+
+  public void setContactsPhone(String[] contactsPhone) {
+    this.contactsPhone = contactsPhone;
+  }
+
+  public String getWebsite() {
+    return website;
+  }
+
+  public void setWebsite(String website) {
+    this.website = website;
+  }
+
+  public String getContactInfor() {
+    return contactInfor;
+  }
+
+  public void setContactInfor(String contactInfor) {
+    this.contactInfor = contactInfor;
+  }
+
+  public int getType() {
+    return type;
+  }
+
+  public void setType(int type) {
+    this.type = type;
+  }
+
+  public String getNote() {
+    return note;
+  }
+
+  public void setNote(String note) {
+    this.note = note;
   }
 
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012-2012 BigB.
+ * Copyright (C) 2003-2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -16,15 +16,111 @@
  */
 package org.exoplatform.cms.service;
 
+import java.util.Date;
+
+import org.exoplatform.services.jcr.util.IdGenerator;
+
 /**
- * Created by BigB 
- * Author : Nguyen Van Thang
- *          chuasonlam8484@gmail.com
- * Jun 9, 2012  
+ * Created by The eXo BigB
+ * Author : Vu Duy Tu
+ *          duytucntt@gmail.com
+ * Jul 26, 2012  
  */
- 
 public class CategoryProduct {
-  Long id;
-  String name;
-  
+  public static final String CATEGORY = "Category";
+
+  private String             id;
+
+  private String             name;
+
+  private String             description;
+
+  private boolean            isSpecial;
+
+  private int                order;
+
+  private long               productCount;
+
+  private Date               createdDate;
+
+  private Date               modifiedDate;
+
+  private boolean            isActive;
+
+  public CategoryProduct() {
+    id = CATEGORY.concat(IdGenerator.generate());
+  }
+
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public boolean isSpecial() {
+    return isSpecial;
+  }
+
+  public void setSpecial(boolean isSpecial) {
+    this.isSpecial = isSpecial;
+  }
+
+  public int getOrder() {
+    return order;
+  }
+
+  public void setOrder(int order) {
+    this.order = order;
+  }
+
+  public long getProductCount() {
+    return productCount;
+  }
+
+  public void setProductCount(long productCount) {
+    this.productCount = productCount;
+  }
+
+  public Date getCreatedDate() {
+    return createdDate;
+  }
+
+  public void setCreatedDate(Date createdDate) {
+    this.createdDate = createdDate;
+  }
+
+  public Date getModifiedDate() {
+    return modifiedDate;
+  }
+
+  public void setModifiedDate(Date modifiedDate) {
+    this.modifiedDate = modifiedDate;
+  }
+
+  public boolean isActive() {
+    return isActive;
+  }
+
+  public void setActive(boolean isActive) {
+    this.isActive = isActive;
+  }
+
 }

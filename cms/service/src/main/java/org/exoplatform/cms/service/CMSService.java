@@ -16,13 +16,12 @@
  */
 package org.exoplatform.cms.service;
 
-
 /**
  * Main Facade for all BBCode related operations
  * @author <a href="mailto:patrice.lamarque@exoplatform.com">Patrice Lamarque</a>
  * @version $Revision$
  */
 public interface CMSService {
-  
-	public String getContentTest() ;
+
+  public String getContentTest();
 }
