@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2011 eXo Platform SAS.
+ * Copyright (C) 2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -30,7 +30,7 @@ import junit.framework.TestCase;
 import org.exoplatform.ks.common.image.impl.ResizeImageServiceImpl;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : Lai Trung Hieu
  *          hieu.lai@exoplatform.com
  * 31 May 2011  

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2009 eXo Platform SAS.
+ * Copyright (C) 2012 - BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -38,7 +38,6 @@ public interface SessionManager {
 
   /**
    * This method is here for backward compatibility, but will be removed to get rid of SessionProvider
-   * @deprecated use {@link #openSession()} t
    * @param sessionProvider
    * @return
    */

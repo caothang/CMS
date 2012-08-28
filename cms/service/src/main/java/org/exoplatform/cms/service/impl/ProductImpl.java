@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 - BigB.
+ * Copyright (C) 2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -16,26 +16,33 @@
  */
 package org.exoplatform.cms.service.impl;
 
+import javax.jcr.PathNotFoundException;
+import javax.jcr.RepositoryException;
+
+import org.exoplatform.cms.service.CMSImplementBase;
 import org.exoplatform.cms.service.CMSNodeTypes;
+import org.exoplatform.cms.service.Product;
 import org.exoplatform.ks.common.jcr.KSDataLocation;
-import org.exoplatform.ks.common.jcr.SessionManager;
 import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 
-public class JCRDataStorage implements CMSNodeTypes {
-  private static final Log    LOG = ExoLogger.getLogger(JCRDataStorage.class);
+/**
+ * This class use for processing all logic about Product 
+ * Created by The BigB
+ * Author : Vu Duy Tu
+ *          duytucntt@gmail.com
+ * Aug 28, 2012  
+ */
 
-  public NodeHierarchyCreator nodeHierarchyCreator_;
+public class ProductImpl extends CMSImplementBase implements CMSNodeTypes {
+  private static final Log LOG = ExoLogger.getLogger(ProductImpl.class);
 
-  public SessionManager       sessionManager;
-
-  public KSDataLocation       dataLocator;
-
-  public JCRDataStorage(NodeHierarchyCreator nodeHierarchyCreator, KSDataLocation dataLocator) {
-    this.nodeHierarchyCreator_ = nodeHierarchyCreator;
-    this.dataLocator = dataLocator;
-    this.sessionManager = dataLocator.getSessionManager();
+  public ProductImpl(NodeHierarchyCreator nodeHierarchyCreator, KSDataLocation dataLocator) {
+    super(nodeHierarchyCreator, dataLocator);
   }
 
+  public Product getProduct(String productId) throws RepositoryException, PathNotFoundException {
+    return null;
+  }
 }

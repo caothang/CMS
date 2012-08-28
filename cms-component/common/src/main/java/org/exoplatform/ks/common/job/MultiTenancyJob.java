@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2011 eXo Platform SAS.
+ * Copyright (C) 2012 BigB.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -34,7 +34,7 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
 /**
- * Created by The eXo Platform SAS Author : Lai Trung Hieu
+ * Created by The BigB Author : Lai Trung Hieu
  * hieult@exoplatform.com Aug 5, 2011
  */
 public abstract class MultiTenancyJob implements Job {

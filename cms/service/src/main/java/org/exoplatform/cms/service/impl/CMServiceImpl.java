@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2007 eXo Platform SAS.
+ * Copyright (C) 2012 - BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -27,34 +27,45 @@ import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.picocontainer.Startable;
 
-@NameTemplate(@Property(key = "service", value = "poll"))
+@NameTemplate(@Property(key = "service", value = "cms"))
 public class CMServiceImpl implements Startable, CMSService {
-  private JCRDataStorage   storage_;
+  private JCRDataStorage   dataStorage_;
+
+  private CategoryImpl     categoryImpl_;
+
+  private ProductImpl      productImpl_;
+
+  private PartnerImpl      partnerImpl_;
+
+  private CMSSearchImpl    searchImpl_;
 
   private KSDataLocation   dataLocator;
 
-  private static final Log log = ExoLogger.getLogger(CMServiceImpl.class);
+  private static final Log LOG = ExoLogger.getLogger(CMServiceImpl.class);
 
-  public CMServiceImpl(InitParams params, KSDataLocation locator, NodeHierarchyCreator nodeHierarchyCreator) throws Exception {
+  public CMServiceImpl(InitParams params, KSDataLocation locator, NodeHierarchyCreator nodeHCreator) throws Exception {
     this.dataLocator = locator;
-    storage_ = new JCRDataStorage(nodeHierarchyCreator, dataLocator);
+    dataStorage_ = new JCRDataStorage(nodeHCreator, dataLocator);
+    categoryImpl_ = new CategoryImpl(nodeHCreator, dataLocator);
+    productImpl_ = new ProductImpl(nodeHCreator, dataLocator);
+    partnerImpl_ = new PartnerImpl(nodeHCreator, dataLocator);
+    searchImpl_ = new CMSSearchImpl(nodeHCreator, dataLocator);
   }
 
   public void start() {
     try {
-      log.info("initializing cms default data...");
+      LOG.info("initializing cms default data...");
     } catch (Exception e) {
-      log.error("Failed to initializing default data for cms: ", e);
+      LOG.error("Failed to initializing default data for cms: ", e);
     }
   }
 
   public void stop() {
   }
 
-	@Override
-	public String getContentTest() {
-		return "<br/><h2> Data content test from service.....</h2>";
-	}
-
+  @Override
+  public String getContentTest() {
+    return "<br/><h2> Data content test from service.....</h2>";
+  }
 
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2007 eXo Platform SAS.
+ * Copyright (C) 2003-2007 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -20,7 +20,7 @@ package org.exoplatform.ks.common.user;
 
 /**
  * Responsible to provide user profile information to the forum.<br><br>
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : eXoPlatform
  *          exo@exoplatform.com
  * Aug 21, 2008  

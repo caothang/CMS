@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2010 eXo Platform SAS.
+ * Copyright (C) 2003-2010 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -23,7 +23,7 @@ import org.exoplatform.webui.event.Event.Phase;
 import org.exoplatform.webui.organization.account.UIUserSelector;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : Nguyen Van Hoang
  *          hoangnv01@gmail.com
  * Jun 22, 2010  

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2007 eXo Platform SAS.
+ * Copyright (C) 2003-2007 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -24,7 +24,7 @@ import org.exoplatform.container.xml.InitParams;
 import org.exoplatform.container.xml.PropertiesParam;
 
 /**
- * Created by The eXo Platform SAS.
+ * Created by The BigB.
  * 
  * @author Hung nguyen Quang
  * @email: hung.nguyen@exoplatform.com

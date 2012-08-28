@@ -14,51 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see<http://www.gnu.org/licenses/>.
  */
-package org.exoplatform.cms.service;
+package org.exoplatform.cms.service.impl;
 
-import org.exoplatform.services.jcr.util.IdGenerator;
+import org.exoplatform.cms.service.CMSImplementBase;
+import org.exoplatform.ks.common.jcr.KSDataLocation;
+import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;
+import org.exoplatform.services.log.ExoLogger;
+import org.exoplatform.services.log.Log;
 
 /**
- * Created by The eXo BigB
+ * Created by The BigB
  * Author : Vu Duy Tu
  *          duytucntt@gmail.com
- * Jul 26, 2012  
+ * Aug 29, 2012  
  */
-public class Manufacturer {
-  public static final String MANUFACTURER = "Manufacturer";
+public class PartnerImpl extends CMSImplementBase {
+  private static final Log LOG = ExoLogger.getLogger(PartnerImpl.class);
 
-  private String             id;
-
-  private String             name;
-
-  private int                order;
-
-  public Manufacturer() {
-    id = MANUFACTURER.concat(IdGenerator.generate());
-  }
-
-  public String getId() {
-    return id;
-  }
-
-  public void setId(String id) {
-    this.id = id;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public int getOrder() {
-    return order;
-  }
-
-  public void setOrder(int order) {
-    this.order = order;
+  public PartnerImpl(NodeHierarchyCreator nodeHierarchyCreator, KSDataLocation dataLocator) {
+    super(nodeHierarchyCreator, dataLocator);
   }
 
 }

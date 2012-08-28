@@ -1,5 +1,5 @@
 /***************************************************************************
- * Copyright (C) 2003-2008 eXo Platform SAS.
+ * Copyright (C) 2003-2008 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * Created by The eXo Platform SAS 
+ * Created by The BigB 
  * Author : Vu Duy Tu 
  *           tu.duy@exoplatform.com 
  * May 22, 2008 - 2:58:53 AM

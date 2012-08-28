@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2011 eXo Platform SAS.
+ * Copyright (C) 2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -30,7 +30,7 @@ import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.webui.form.wysiwyg.FCKEditorConfig;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : Vu Duy Tu
  *          tu.duy@exoplatform.com
  * Jul 22, 2011  

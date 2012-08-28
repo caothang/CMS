@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2009 eXo Platform SAS.
+ * Copyright (C) 2012 - BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -23,7 +23,7 @@ import org.exoplatform.management.annotations.ManagedName;
 
 /**
  * A managed plugin base class
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : eXoPlatform
  *          exo@exoplatform.com
  * Jul 18, 2009  

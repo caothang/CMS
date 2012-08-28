@@ -32,30 +32,30 @@ import org.exoplatform.services.rest.resource.ResourceContainer;
  */
 @Path("ks/cms")
 public class CMSWebservice implements ResourceContainer {
-  private static final Log   log      = ExoLogger.getLogger(CMSWebservice.class);
+  private static final Log    log                 = ExoLogger.getLogger(CMSWebservice.class);
 
-  final public static String APP_TYPE = "poll".intern();
+  final public static String  APP_TYPE            = "poll".intern();
+
   private OrganizationService organizationService = null;
-  
+
   public CMSWebservice() {
   }
-  
-  private static final CacheControl         cc;
+
+  private static final CacheControl cc;
   static {
     RuntimeDelegate.setInstance(new RuntimeDelegateImpl());
     cc = new CacheControl();
     cc.setNoCache(true);
     cc.setNoStore(true);
   }
-  
+
   private OrganizationService getOrganizationService() {
     if (organizationService == null) {
-      organizationService = (OrganizationService) ExoContainerContext.getCurrentContainer()
-                                .getComponentInstance(OrganizationService.class);
+      organizationService = (OrganizationService) ExoContainerContext.getCurrentContainer().getComponentInstance(OrganizationService.class);
     }
     return organizationService;
   }
-  
+
   private String getUserId(SecurityContext sc, UriInfo uriInfo) {
     if (sc != null && sc.getUserPrincipal() != null) {
       return sc.getUserPrincipal().getName();
@@ -64,11 +64,12 @@ public class CMSWebservice implements ResourceContainer {
     }
     return StringUtils.EMPTY;
   }
-  
+
   private String getViewerId(UriInfo uriInfo) {
     URI uri = uriInfo.getRequestUri();
     String requestString = uri.getQuery();
-    if (requestString == null) return null;
+    if (requestString == null)
+      return null;
     String[] queryParts = requestString.split("&");
     for (String queryPart : queryParts) {
       if (queryPart.startsWith("opensocial_viewer_id")) {

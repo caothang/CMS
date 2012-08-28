@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 - BigB.
+ * Copyright (C) 2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -14,28 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see<http://www.gnu.org/licenses/>.
  */
-package org.exoplatform.ks.common.jcr;
-
-import junit.framework.TestCase;
-
-import org.exoplatform.ks.common.jcr.KSDataLocation.Locations;
+package org.exoplatform.cms.exception;
 
 /**
- * @author <a href="mailto:patrice.lamarque@exoplatform.com">Patrice Lamarque</a>
- * @version $Revision$
+ * Created by The BigB
+ * Author : Vu Duy Tu
+ *          duytucntt@gmail.com
+ * Aug 29, 2012  
  */
-public class TestKSDataLocation extends TestCase {
+public class PartnerNotFoundException extends NullPointerException {
+  private static final long serialVersionUID = -6801457784961551309L;
 
-  protected void setUp() throws Exception {
-    super.setUp();
+  public PartnerNotFoundException(String message) {
+    super(message);
   }
 
-  public void testGetUserSubscriptionLocation() {
-
-    KSDataLocation location = new KSDataLocation("");
-    String expected = Locations.BBCODE_HOME + "/FOO/forumSubscriptionFOO";
-
-
+  public PartnerNotFoundException() {
+    super();
   }
-
 }

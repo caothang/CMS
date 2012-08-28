@@ -8,7 +8,6 @@
   <component>
     <key>org.exoplatform.ks.common.user.ContactProvider</key>
     <type>org.exoplatform.ks.common.user.DefaultContactProvider</type>
-<!--<type>org.exoplatform.ks.ext.common.SocialContactProvider</type> -->
   </component>
  
 </configuration>

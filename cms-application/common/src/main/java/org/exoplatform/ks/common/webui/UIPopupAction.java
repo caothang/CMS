@@ -1,5 +1,5 @@
 /***************************************************************************
- * Copyright (C) 2003-2010 eXo Platform SAS.
+ * Copyright (C) 2003-2010 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -22,7 +22,7 @@ import org.exoplatform.webui.core.UIComponent;
 import org.exoplatform.webui.core.lifecycle.Lifecycle;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : Vu Duy Tu
  *          tu.duy@exoplatform.com
  * Jan 26, 2010 - 10:19:17 AM  

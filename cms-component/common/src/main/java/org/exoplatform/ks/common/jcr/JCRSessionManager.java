@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2009 eXo Platform SAS.
+ * Copyright (C) 2012 - BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -26,7 +26,7 @@ import org.exoplatform.services.jcr.core.ManageableRepository;
 import org.exoplatform.services.jcr.ext.common.SessionProvider;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : eXoPlatform
  *          exo@exoplatform.com
  * Oct 16, 2009  

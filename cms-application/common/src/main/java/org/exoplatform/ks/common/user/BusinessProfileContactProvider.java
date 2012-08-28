@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2008 eXo Platform SAS.
+ * Copyright (C) 2003-2008 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -24,7 +24,7 @@ import org.exoplatform.services.organization.UserProfile;
 /**
  * ContactProvider implementation that uses portal user business profile to populate {@link CommonContact}. 
  * Preferable for corporate forums.<br><br>
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : eXoPlatform
  *          exo@exoplatform.com
  * Aug 21, 2008  

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2008 eXo Platform SAS.
+ * Copyright (C) 2003-2008 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -22,7 +22,7 @@ import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.webui.form.input.UICheckBoxInput;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : Vu Duy Tu
  *          tu.duy@exoplatform.com
  * 24 Mar 2008, 08:00:59

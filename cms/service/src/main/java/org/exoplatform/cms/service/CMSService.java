@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2009 eXo Platform SAS.
+ * Copyright (C) 2012 - BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -17,8 +17,7 @@
 package org.exoplatform.cms.service;
 
 /**
- * Main Facade for all BBCode related operations
- * @author <a href="mailto:patrice.lamarque@exoplatform.com">Patrice Lamarque</a>
+ * @author <a href="mailto:duytucntt@gmail.com">Vu Duy Tu</a>
  * @version $Revision$
  */
 public interface CMSService {

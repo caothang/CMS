@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2011 eXo Platform SAS.
+ * Copyright (C) 2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -23,7 +23,7 @@ import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 
 /**
- * Created by The eXo Platform SAS
+ * Created by The BigB
  * Author : Vu Duy Tu
  *          tu.duy@exoplatform.com
  * Oct 4, 2011  
