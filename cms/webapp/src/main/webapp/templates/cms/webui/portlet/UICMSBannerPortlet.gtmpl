@@ -1,0 +1,45 @@
+<div id="$uicomponent.id" class="UICMSBannerPortlet">
+	<div id="head-top">
+		<div class="ClearFix main">
+			<ul class="nav-top">
+				<li class="fst active"><a href="index.html">Trang chủ</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#">Dịch vụ</a></li>
+				<li><a href="#">Bảo hành</a></li>
+				<li><a href="#">Tải báo giá</a></li>
+				<li class="lst"><a href="#">Liên hệ</a></li>
+			</ul><!-- end .nav-top -->
+		</div>
+	</div>
+	<div id="head-mid"><div class="clearfix main">
+					<h1 id="logo"><a href="index.html">bigb.com.vn</a></h1> <!-- end #logo -->
+					<div id="search">
+						<div class="seachbar">
+							<div class="option">Tất cả</div>
+							<ul style="display:none" class="slt-opt">
+								<li class="fst"><a href="#">Tất cả</a></li>
+								<li><a href="#">Máy tính</a></li>
+								<li><a href="#">Thiết bị văn Phòng</a></li>
+								<li><a href="#">Thiết bị an ninh</a></li>
+								<li><a href="#">Siêu thị, Ngân hàng</a></li>
+								<li><a href="#">Đồ gia dụng</a></li>
+								<li class="lst"><a href="#">Thiết bị khác</a></li>
+							</ul>
+							<select class="select">
+								<option>Tất cả</option>
+								<option>Máy tính</option>
+								<option>Thiết bị văn Phòng</option>
+								<option>Thiết bị an ninh</option>
+								<option>Siêu thị, Ngân hàng</option>
+								<option>Đồ gia dụng</option>
+								<option>Thiết bị khác</option>
+							</select>
+							<input type="text" value="Nhập nội dung tìm kiếm" class="input_txt unfocus">
+						</div>
+						<span class="button01"><span class="inner"><input type="submit" value="Tìm kiếm" title="Tìm kiếm" class="btnSrch"></span></span>
+						<span class="button01"><span class="inner"><input type="button" value="Tìm kiếm nâng cao" title="Tìm kiếm nâng cao" class="btnSrchAdv"></span></span>
+					</div><!-- end #search -->
+					
+				</div></div>
+				
+</div>

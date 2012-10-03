@@ -36,4 +36,40 @@
 		</portlet-preferences>
 		
 	</portlet>
+	
+	<portlet>
+		<description xml:lang="EN">CMS Banner Portlet</description>
+		<portlet-name>CMSBannerPortlet</portlet-name>
+		<display-name xml:lang="EN">CMS Banner Portlet</display-name>
+		<portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>		
+		
+		<init-param>
+			<name>webui.configuration</name>
+			<value>/WEB-INF/conf/portlet/cms/CMSBannerPortlet/webui/configuration.xml</value>
+		</init-param>
+
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>help</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>locale.portlet.cms.CMSBanserPortlet</resource-bundle>
+		<portlet-info>
+			<title>CMS Portlet</title>
+			<short-title>CMS Portlet</short-title>
+			<keywords>cms</keywords>
+		</portlet-info>
+	
+		<portlet-preferences>
+			<preference>
+				<name>Show</name>
+				<value></value> <!--  -->
+				<read-only>false</read-only>
+			</preference>
+		</portlet-preferences>
+		
+	</portlet>
+	
 </portlet-app>

@@ -17,6 +17,7 @@
 package org.exoplatform.cms.webui;
 
 import org.exoplatform.cms.service.CMSService;
+import org.exoplatform.cms.webui.portlet.UICMSPortlet;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.ks.common.webui.BaseUIForm;
 import org.exoplatform.webui.core.UIComponent;
