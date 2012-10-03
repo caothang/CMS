@@ -438,6 +438,12 @@
 			</childNodeDefinition>
 		</childNodeDefinitions>
 	</nodeType>
+	
+	<nodeType name="exo:statiticHome" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+		<supertypes>
+			<supertype>nt:base</supertype>
+		</supertypes>
+	</nodeType>
 
 	<nodeType name="exo:cmsSystem" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
 		<supertypes>
