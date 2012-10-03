@@ -55,10 +55,10 @@
 			<portlet-mode>edit</portlet-mode>
 		</supports>
 		<supported-locale>en</supported-locale>
-		<resource-bundle>locale.portlet.cms.CMSBanserPortlet</resource-bundle>
+		<resource-bundle>locale.portlet.cms.CMSBannerPortlet</resource-bundle>
 		<portlet-info>
-			<title>CMS Portlet</title>
-			<short-title>CMS Portlet</short-title>
+			<title>CMS Banner Portlet</title>
+			<short-title>CMS Banner</short-title>
 			<keywords>cms</keywords>
 		</portlet-info>
 	
