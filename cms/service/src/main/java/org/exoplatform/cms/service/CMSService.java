@@ -16,6 +16,10 @@
  */
 package org.exoplatform.cms.service;
 
+import java.util.List;
+
+import javax.jcr.RepositoryException;
+
 /**
  * @author <a href="mailto:duytucntt@gmail.com">Vu Duy Tu</a>
  * @version $Revision$
@@ -23,4 +27,34 @@ package org.exoplatform.cms.service;
 public interface CMSService {
 
   public String getContentTest();
+  
+  
+  public CategoryProduct getCategory(String categoryId) throws RepositoryException;
+  public CategoryProduct getCategorySummary(String categoryId) throws RepositoryException;
+  public CategoryProduct updateCategory(CategoryProduct categoryProduct) throws RepositoryException;
+  public List<CategoryProduct> getAllCategoryProduct() throws RepositoryException;
+  public List<CategoryProduct> getCategoryProductByQuery(String query) throws RepositoryException;
+  public void saveCategory(CategoryProduct categoryProduct, boolean isNew) throws RepositoryException;
+  
+  public Product getProduct(String categoryId, String productId) throws RepositoryException;
+  public Product getProductSummary(String categoryId, String productId) throws RepositoryException;
+  public Product updateCategory(Product product) throws RepositoryException;
+  
+  public void saveProduct(Product product, boolean isNew) throws RepositoryException;
+  
+  public Partner getPartner(String partnerId) throws RepositoryException;
+  public Partner getPartnerSummary(String partnerId) throws RepositoryException;
+  public Partner updatePartner(Partner partner) throws RepositoryException;
+  public void savePartner(Partner partner, boolean isNew) throws RepositoryException;
+  
+  public Manufacturer getManufacturer(String manufacturerId) throws RepositoryException;
+  public Manufacturer getManufacturerSummary(String manufacturerId) throws RepositoryException;
+  public Manufacturer updateManufacturer(Manufacturer manufacturer) throws RepositoryException;
+  public void saveManufacturer(Manufacturer manufacturer, boolean isNew) throws RepositoryException;
+
+  public CmsUser getCmsUser(String userId) throws RepositoryException;
+  public CmsUser getCmsUserSummary(String userId) throws RepositoryException;
+  public CmsUser updateCmsUser(CmsUser cmsUser) throws RepositoryException;
+  public void saveCmsUser(CmsUser cmsUser, boolean isNew) throws RepositoryException;
+  
 }

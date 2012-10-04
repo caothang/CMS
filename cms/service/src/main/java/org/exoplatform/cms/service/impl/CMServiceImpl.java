@@ -17,7 +17,16 @@
 
 package org.exoplatform.cms.service.impl;
 
+import java.util.List;
+
+import javax.jcr.RepositoryException;
+
 import org.exoplatform.cms.service.CMSService;
+import org.exoplatform.cms.service.CategoryProduct;
+import org.exoplatform.cms.service.CmsUser;
+import org.exoplatform.cms.service.Manufacturer;
+import org.exoplatform.cms.service.Partner;
+import org.exoplatform.cms.service.Product;
 import org.exoplatform.container.xml.InitParams;
 import org.exoplatform.cms.common.jcr.KSDataLocation;
 import org.exoplatform.management.jmx.annotations.NameTemplate;
@@ -66,6 +75,138 @@ public class CMServiceImpl implements Startable, CMSService {
   @Override
   public String getContentTest() {
     return "<br/><h2> Data content test from service.....</h2>";
+  }
+
+  @Override
+  public CategoryProduct getCategory(String categoryId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public CategoryProduct getCategorySummary(String categoryId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public CategoryProduct updateCategory(CategoryProduct categoryProduct) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public List<CategoryProduct> getAllCategoryProduct() throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public List<CategoryProduct> getCategoryProductByQuery(String query) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void saveCategory(CategoryProduct categoryProduct, boolean isNew) throws RepositoryException {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public Product getProduct(String categoryId, String productId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Product getProductSummary(String categoryId, String productId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Product updateCategory(Product product) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void saveProduct(Product product, boolean isNew) throws RepositoryException {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public Partner getPartner(String partnerId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Partner getPartnerSummary(String partnerId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Partner updatePartner(Partner partner) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void savePartner(Partner partner, boolean isNew) throws RepositoryException {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public Manufacturer getManufacturer(String manufacturerId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Manufacturer getManufacturerSummary(String manufacturerId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Manufacturer updateManufacturer(Manufacturer manufacturer) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void saveManufacturer(Manufacturer manufacturer, boolean isNew) throws RepositoryException {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public CmsUser getCmsUser(String userId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public CmsUser getCmsUserSummary(String userId) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public CmsUser updateCmsUser(CmsUser cmsUser) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void saveCmsUser(CmsUser cmsUser, boolean isNew) throws RepositoryException {
+    // TODO Auto-generated method stub
+    
   }
 
 }
