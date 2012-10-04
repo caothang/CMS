@@ -7,7 +7,7 @@
   <external-component-plugins>
     <target-component>org.exoplatform.cms.common.jcr.KSDataLocation</target-component>
     <component-plugin>
-      <name>ks.data.location</name>
+      <name>cms.data.location</name>
       <set-method>setLocation</set-method>
       <type>org.exoplatform.cms.common.conf.DataLocationPlugin</type>
       <init-params>
@@ -28,7 +28,7 @@
       <type>org.exoplatform.services.jcr.ext.hierarchy.impl.AddPathPlugin</type>            
       <init-params>
         <object-param>
-          <name>ks.storage</name>
+          <name>cms.storage</name>
           <description>ks data storage tree</description>
           <object type="org.exoplatform.services.jcr.ext.hierarchy.impl.HierarchyConfig">
             <field name="workspaces">

@@ -67,6 +67,7 @@ public class CMServiceImpl implements Startable, CMSService {
     } catch (Exception e) {
       LOG.error("Failed to initializing default data for cms: ", e);
     }
+    LOG.info("Stated cms OK.");
   }
 
   public void stop() {

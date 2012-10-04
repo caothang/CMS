@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.hoahong.ks</groupId>
+    <groupId>org.hoahong.cms</groupId>
     <artifactId>cms.packaging</artifactId>
     <version>4.0.0-SNAPSHOT</version>
   </parent>
@@ -32,13 +32,13 @@
       <type>js</type>
     </dependency>
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
-      <artifactId>ks.packaging.module</artifactId>
+      <groupId>org.hoahong.cms</groupId>
+      <artifactId>cms.packaging.module</artifactId>
       <version>${project.version}</version>
       <type>js</type>
     </dependency>
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>portal.packaging.product</artifactId>
       <version>${project.version}</version>
       <type>js</type>
@@ -638,73 +638,73 @@
    
 
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.server.tomcat.patch</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.demo.rest-cmsdemo</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
-      <artifactId>cms.service</artifactId>
+      <groupId>org.hoahong.cms</groupId>
+      <artifactId>cms.cms.service</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.application.common</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.web.cmsResources</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.component.bbcode</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.component.common</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.demo.cometd-war</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.extension.webapp</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
-      <artifactId>cms.webapp</artifactId>
+      <groupId>org.hoahong.cms</groupId>
+      <artifactId>cms.cms.webapp</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.demo.config</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
     <dependency>
-      <groupId>org.hoahong.ks</groupId>
+      <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.demo.webapp</artifactId>
       <version>${project.version}</version>
       <type>war</type>

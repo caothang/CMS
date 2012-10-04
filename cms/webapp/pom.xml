@@ -3,16 +3,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.hoahong.cms</groupId>
-    <artifactId>cms</artifactId>
+    <artifactId>cms.cms</artifactId>
     <version>4.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>cms.webapp</artifactId>
+  <artifactId>cms.cms.webapp</artifactId>
   <packaging>war</packaging>
   <name>CMS application</name>
   <dependencies>
     <dependency>
       <groupId>org.hoahong.cms</groupId>
-      <artifactId>cms.service</artifactId>
+      <artifactId>cms.cms.service</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>

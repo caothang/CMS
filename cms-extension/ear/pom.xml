@@ -22,12 +22,12 @@
     </dependency>
     <dependency>
       <groupId>org.hoahong.cms</groupId>
-      <artifactId>cms.service</artifactId>
+      <artifactId>cms.cms.service</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.hoahong.cms</groupId>
-      <artifactId>cms.webapp</artifactId>
+      <artifactId>cms.cms.webapp</artifactId>
       <version>${project.version}</version>
       <type>war</type>
     </dependency>
@@ -68,7 +68,7 @@
             <webModule>
               <groupId>org.hoahong.cms</groupId>
               <artifactId>cms.extension.webapp</artifactId>
-              <contextRoot>ks</contextRoot>
+              <contextRoot>cms</contextRoot>
               <bundleFileName>cms-extension.war</bundleFileName>
             </webModule>
             <jarModule>
@@ -78,12 +78,12 @@
             </jarModule>
             <jarModule>
               <groupId>org.hoahong.cms</groupId>
-              <artifactId>cms.service</artifactId>
+              <artifactId>cms.cms.service</artifactId>
               <includeInApplicationXml>true</includeInApplicationXml>
             </jarModule>
             <webModule>
               <groupId>org.hoahong.cms</groupId>
-              <artifactId>cms.webapp</artifactId>
+              <artifactId>cms.cms.webapp</artifactId>
               <contextRoot>cms</contextRoot>
               <bundleFileName>cms.war</bundleFileName>
             </webModule>

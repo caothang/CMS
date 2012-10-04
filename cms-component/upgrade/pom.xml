@@ -41,7 +41,7 @@
     </dependency>
     <dependency>
       <groupId>org.hoahong.cms</groupId>
-      <artifactId>cms.service</artifactId>
+      <artifactId>cms.cms.service</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>

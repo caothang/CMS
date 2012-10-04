@@ -6,7 +6,7 @@
 
   <portal-skin>
     <skin-name>Default</skin-name>
-    <skin-module>ks</skin-module>
+    <skin-module>cms</skin-module>
     <css-path>/skin/Stylesheet.css</css-path>
     <css-priority>1</css-priority>
   </portal-skin>
