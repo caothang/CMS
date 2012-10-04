@@ -13,15 +13,15 @@
 
   <javascript>
     <param>
-      <js-module>eXo.ks.KSUtils</js-module>
-      <js-path>/javascript/eXo/ks/KSUtils.js</js-path>
+      <js-module>eXo.cms.KSUtils</js-module>
+      <js-path>/javascript/eXo/cms/KSUtils.js</js-path>
       <js-priority>8</js-priority>
     </param>
   </javascript>
   <javascript>
     <param>
-      <js-module>eXo.ks.MaskLayerControl</js-module>
-      <js-path>/javascript/eXo/ks/MaskLayerControl.js</js-path>
+      <js-module>eXo.cms.MaskLayerControl</js-module>
+      <js-path>/javascript/eXo/cms/MaskLayerControl.js</js-path>
       <js-priority>9</js-priority>
     </param>
   </javascript>

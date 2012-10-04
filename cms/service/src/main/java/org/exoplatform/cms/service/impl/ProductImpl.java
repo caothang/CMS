@@ -22,7 +22,7 @@ import javax.jcr.RepositoryException;
 import org.exoplatform.cms.service.CMSImplementBase;
 import org.exoplatform.cms.service.CMSNodeTypes;
 import org.exoplatform.cms.service.Product;
-import org.exoplatform.ks.common.jcr.KSDataLocation;
+import org.exoplatform.cms.common.jcr.KSDataLocation;
 import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;

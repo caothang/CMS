@@ -6,7 +6,7 @@
   <external-component-plugins>
     <target-component>org.exoplatform.application.registry.ApplicationRegistryService</target-component>     
 	    <component-plugin>
-	      <name>ks.portlets.registry</name>
+	      <name>cms.portlets.registry</name>
 	      <set-method>initListener</set-method>
 	      <type>org.exoplatform.application.registry.ApplicationCategoriesPlugins</type>
 	      <description>this listener init the portlets are registered in PortletRegister</description>

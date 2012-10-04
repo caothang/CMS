@@ -17,8 +17,8 @@
 package org.exoplatform.cms.service.impl;
 
 import org.exoplatform.cms.service.CMSNodeTypes;
-import org.exoplatform.ks.common.jcr.KSDataLocation;
-import org.exoplatform.ks.common.jcr.SessionManager;
+import org.exoplatform.cms.common.jcr.KSDataLocation;
+import org.exoplatform.cms.common.jcr.SessionManager;
 import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;

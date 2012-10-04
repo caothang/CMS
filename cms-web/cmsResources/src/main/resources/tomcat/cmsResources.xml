@@ -1,2 +1,2 @@
-<Context path="/cmsResources" docBase="../../../eXoProjects/ks/trunk/web/cmsResources/src/main/webapp" 
+<Context path="/cmsResources" docBase="../../../eXoProjects/cms/trunk/web/cmsResources/src/main/webapp" 
          debug="0" reloadable="true" />

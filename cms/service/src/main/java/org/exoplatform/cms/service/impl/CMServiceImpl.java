@@ -19,7 +19,7 @@ package org.exoplatform.cms.service.impl;
 
 import org.exoplatform.cms.service.CMSService;
 import org.exoplatform.container.xml.InitParams;
-import org.exoplatform.ks.common.jcr.KSDataLocation;
+import org.exoplatform.cms.common.jcr.KSDataLocation;
 import org.exoplatform.management.jmx.annotations.NameTemplate;
 import org.exoplatform.management.jmx.annotations.Property;
 import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;

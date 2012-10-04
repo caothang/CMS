@@ -20,8 +20,8 @@ import javax.jcr.Node;
 import javax.jcr.Session;
 
 import org.exoplatform.cms.service.impl.JCRDataStorage;
-import org.exoplatform.ks.common.jcr.KSDataLocation;
-import org.exoplatform.ks.common.jcr.SessionManager;
+import org.exoplatform.cms.common.jcr.KSDataLocation;
+import org.exoplatform.cms.common.jcr.SessionManager;
 import org.exoplatform.services.jcr.ext.common.SessionProvider;
 import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;
 import org.exoplatform.services.log.ExoLogger;

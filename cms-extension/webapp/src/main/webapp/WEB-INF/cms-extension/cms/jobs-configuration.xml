@@ -5,8 +5,8 @@
   xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
 
   <component>
-    <key>org.exoplatform.ks.common.jcr.KSDataLocation</key>
-    <type>org.exoplatform.ks.common.jcr.KSDataLocation</type>
+    <key>org.exoplatform.cms.common.jcr.KSDataLocation</key>
+    <type>org.exoplatform.cms.common.jcr.KSDataLocation</type>
     <description>Holds JCR storage location for KS data</description>
     <init-params>
       <value-param>
@@ -18,13 +18,13 @@
   </component>
 
   <component>
-    <key>org.exoplatform.ks.common.image.ResizeImageService</key>
-    <type>org.exoplatform.ks.common.image.impl.ResizeImageServiceImpl</type>
+    <key>org.exoplatform.cms.common.image.ResizeImageService</key>
+    <type>org.exoplatform.cms.common.image.impl.ResizeImageServiceImpl</type>
   </component>
   
   <component>
-    <key>org.exoplatform.ks.rendering.MarkupRenderingService</key>
-    <type>org.exoplatform.ks.rendering.MarkupRenderingService</type>
+    <key>org.exoplatform.cms.rendering.MarkupRenderingService</key>
+    <type>org.exoplatform.cms.rendering.MarkupRenderingService</type>
   </component>
 
   <!-- TODO : remove the following services when when they'll be provided by platform -->
@@ -63,7 +63,7 @@
           <description>save the monitor data periodically</description>
           <property name="jobName" value="SendMailJob" />
           <property name="groupName" value="KnowlegedSuite" />
-          <property name="job" value="org.exoplatform.ks.common.notify.NotifyJob" />
+          <property name="job" value="org.exoplatform.cms.common.notify.NotifyJob" />
           <property name="repeatCount" value="0" />
           <property name="period" value="120000" /> <!-- 2 mins-->
           <property name="startTime" value="+0" />

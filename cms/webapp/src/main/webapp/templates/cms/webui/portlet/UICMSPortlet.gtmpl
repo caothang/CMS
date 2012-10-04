@@ -2,10 +2,10 @@
 	import org.exoplatform.web.application.JavascriptManager;
 	def rcontext = _ctx.getRequestContext() ;
 	JavascriptManager jsmanager = rcontext.getJavascriptManager();
-	jsmanager.importJavascript('eXo.ks.KSUtils', '/cmsResources/javascript/');
-	jsmanager.importJavascript('eXo.ks.MaskLayerControl', '/cmsResources/javascript/');
+	jsmanager.importJavascript('eXo.cms.KSUtils', '/cmsResources/javascript/');
+	jsmanager.importJavascript('eXo.cms.MaskLayerControl', '/cmsResources/javascript/');
 	jsmanager.importJavascript('eXo.cms.UICMSPortlet', '/cms/javascript/');
-	jsmanager.addOnResizeJavascript('function(){eXo.ks.KSUtils.setMaskLayer("'+uicomponent.id+'");}');
+	jsmanager.addOnResizeJavascript('function(){eXo.cms.KSUtils.setMaskLayer("'+uicomponent.id+'");}');
 %>
 
 <div class="UICMSPortlet" id="$uicomponent.id">

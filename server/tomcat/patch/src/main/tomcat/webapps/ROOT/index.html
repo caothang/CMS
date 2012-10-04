@@ -4,7 +4,7 @@
 
 <html>
 	<head>
-		<meta http-equiv="refresh" content="0;URL='forumdemo' " />
+		<meta http-equiv="refresh" content="0;URL='cmsdemo' " />
 	</head>
 
 	<body>

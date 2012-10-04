@@ -503,7 +503,7 @@ All those accounts have the default password "gtn".
     * [KS-2843] - Error UI in navigation bar. Detail see file attach
     * [KS-2847] - [wiki] change date format in versions list and compare form
     * [KS-2853] - Poll gadget does not work on ksdemo
-    * [KS-2860] - exo.ks.ext.social-integration.jar is missing in ear extension packaging
+    * [KS-2860] - exo.cms.ext.social-integration.jar is missing in ear extension packaging
     * [KS-2862] - Can not approve a censor post from pending list
     * [KS-2863] - [wiki] History's changes display wrong
     * [KS-2866] - [wiki] wiki portlet doesn't work on Platform 3.0
@@ -644,7 +644,7 @@ All those accounts have the default password "gtn".
     * [KS-3414] - [FAQ] IE7: Error when edit FQA portlet
     * [KS-3415] - [Wiki] IE7: Error when insert macro
     * [KS-3416] - Poll portlet preference modifications are not taken into account in other user sessions
-    * [KS-3420] - Add packages in the lib of exo.ks.extension.ear
+    * [KS-3420] - Add packages in the lib of exo.cms.extension.ear
     * [KS-3421] - [wiki] Error when upload image in new page
     * [KS-3422] - [wiki] Can't view image from another page
     * [KS-3429] - [Wiki] Show content of Wiki Home page after save new page
