@@ -31,6 +31,7 @@
       <version>${org.exoplatform.portal.version}</version>
       <type>js</type>
     </dependency>
+
     <dependency>
       <groupId>org.hoahong.cms</groupId>
       <artifactId>cms.packaging.module</artifactId>

@@ -6,7 +6,7 @@
     <artifactId>cms.packaging</artifactId>
     <version>4.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>cms.packaging.product</artifactId>
+  <artifactId>portal.packaging.product</artifactId>
   <packaging>pom</packaging>
   <name>CMS Packaging Product</name>
   <properties>
