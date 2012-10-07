@@ -47,16 +47,16 @@ import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
 
 @ComponentConfig(
     lifecycle = UIApplicationLifecycle.class,
-    template = "app:/templates/cms/webui/portlet/UICMSBannerPortlet.gtmpl"
+    template = "app:/templates/cms/webui/portlet/UINavigationPortlet.gtmpl"
 )
-public class UICMSBannerPortlet extends UIPortletApplication {
+public class UICMSNavigationPortlet extends UIPortletApplication {
   private boolean isAdmin = false;
 
   private String      userId  = "";
 
   private PortletMode portletMode;
-  public UICMSBannerPortlet() throws Exception {
-    addChild(UIPopupAction.class, null, "UICMSBannerPopupAction");
+  public UICMSNavigationPortlet() throws Exception {
+    addChild(UIPopupAction.class, null, "UICMSNavigationPopupAction");
   }
 
   public void processRender(WebuiApplication app, WebuiRequestContext context) throws Exception {

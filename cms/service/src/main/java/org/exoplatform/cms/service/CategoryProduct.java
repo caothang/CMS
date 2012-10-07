@@ -34,6 +34,10 @@ public class CategoryProduct {
   private String             name;
 
   private String             description;
+  
+  private String             path;
+
+  private String             parentId;
 
   private boolean            isSpecial;
 
@@ -73,6 +77,22 @@ public class CategoryProduct {
 
   public void setDescription(String description) {
     this.description = description;
+  }
+
+  public String getPath() {
+    return path;
+  }
+
+  public void setPath(String path) {
+    this.path = path;
+  }
+
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public boolean isSpecial() {

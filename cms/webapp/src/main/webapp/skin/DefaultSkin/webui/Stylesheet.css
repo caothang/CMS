@@ -1,4 +1,7 @@
 @import url('popup/Stylesheet.css') ;
+@import url('portlet/Stylesheet.css') ;
+
+@import url('UIAdvertise/Stylesheet.css') ;
 
 
 body, html, div, table, tr, td, img, form {
@@ -13,10 +16,7 @@ ul, li {
     padding: 0;
 }
 
-.UICMSPortlet {
-	border: solid 1px red;
-	width: 100%;	
-}
+
 
 a {
     color: #333333;

@@ -33,9 +33,10 @@ public interface CMSService {
   public CategoryProduct getCategorySummary(String categoryId) throws RepositoryException;
   public CategoryProduct updateCategory(CategoryProduct categoryProduct) throws RepositoryException;
   public List<CategoryProduct> getAllCategoryProduct() throws RepositoryException;
-  public List<CategoryProduct> getCategoryProductByQuery(String query) throws RepositoryException;
+  public List<CategoryProduct> getCategoryProductByFilter(CategoryFilter filter) throws RepositoryException;
   public void saveCategory(CategoryProduct categoryProduct, boolean isNew) throws RepositoryException;
   
+  public List<Product> getProductByFilter(ProductFilter filter) throws RepositoryException;
   public Product getProduct(String categoryId, String productId) throws RepositoryException;
   public Product getProductSummary(String categoryId, String productId) throws RepositoryException;
   public Product updateCategory(Product product) throws RepositoryException;

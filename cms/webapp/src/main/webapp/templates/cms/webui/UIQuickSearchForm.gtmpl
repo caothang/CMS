@@ -1,0 +1,26 @@
+<%
+def catProducts = uicomponent.getCategoryProducts();
+
+%>
+<div class="UIQuickSearchForm">
+  <% uiform.begin() %>  
+			<div id="search">
+						<div class="seachbar">
+							<div class="option">Tất cả</div>
+							<ul style="display:none" class="slt-opt">
+								<li class="fst"><a href="javascript:void(0)" rel="all">Tất cả</a></li>
+							<%for(product in catProducts){ %>
+								<li class="fst"><a href="javascript:void(0)" rel="<%product.getId()%>"><%product.getId()%></a></li>
+							<%}%>
+							</ul>
+							
+								<% uiform.renderField("CategoryProducts") %>
+								<% uiform.renderField("SearchKey") %>
+						</div>
+						<span class="button01"><span class="inner"><input type="submit" value="Tìm kiếm" title="Tìm kiếm" class="btnSrch"></span></span>
+						<span class="button01"><span class="inner"><input type="button" value="Tìm kiếm nâng cao" title="Tìm kiếm nâng cao" class="btnSrchAdv"></span></span>
+					</div><!-- end #search -->
+		
+
+  <%uiform.end()%>
+</div>

@@ -22,11 +22,13 @@ import java.util.List;
 import javax.jcr.RepositoryException;
 
 import org.exoplatform.cms.service.CMSService;
+import org.exoplatform.cms.service.CategoryFilter;
 import org.exoplatform.cms.service.CategoryProduct;
 import org.exoplatform.cms.service.CmsUser;
 import org.exoplatform.cms.service.Manufacturer;
 import org.exoplatform.cms.service.Partner;
 import org.exoplatform.cms.service.Product;
+import org.exoplatform.cms.service.ProductFilter;
 import org.exoplatform.container.xml.InitParams;
 import org.exoplatform.cms.common.jcr.KSDataLocation;
 import org.exoplatform.management.jmx.annotations.NameTemplate;
@@ -103,7 +105,7 @@ public class CMServiceImpl implements Startable, CMSService {
   }
 
   @Override
-  public List<CategoryProduct> getCategoryProductByQuery(String query) throws RepositoryException {
+  public List<CategoryProduct> getCategoryProductByFilter(CategoryFilter filter) throws RepositoryException {
     // TODO Auto-generated method stub
     return null;
   }
@@ -114,6 +116,12 @@ public class CMServiceImpl implements Startable, CMSService {
     
   }
 
+  @Override
+  public List<Product> getProductByFilter(ProductFilter filter) throws RepositoryException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+  
   @Override
   public Product getProduct(String categoryId, String productId) throws RepositoryException {
     // TODO Auto-generated method stub
@@ -209,5 +217,6 @@ public class CMServiceImpl implements Startable, CMSService {
     // TODO Auto-generated method stub
     
   }
+
 
 }

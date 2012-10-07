@@ -21,12 +21,15 @@ import java.util.List;
 
 import javax.portlet.PortletMode;
 
+import org.exoplatform.cms.CMSPortletMode;
 import org.exoplatform.cms.Utils;
-import org.exoplatform.cms.service.CMSService;
-import org.exoplatform.cms.webui.UICMSManagement;
-import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.cms.common.UserHelper;
 import org.exoplatform.cms.common.webui.UIPopupAction;
+import org.exoplatform.cms.service.CMSService;
+import org.exoplatform.cms.webui.UICMSManagement;
+import org.exoplatform.cms.webui.UICategoriesProduct;
+import org.exoplatform.cms.webui.UIProductComponent;
+import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.services.security.ConversationState;
 import org.exoplatform.services.security.Identity;
@@ -56,19 +59,32 @@ public class UICMSPortlet extends UIPortletApplication {
   private String      userId  = "";
 
   private PortletMode portletMode;
+  private CMSPortletMode cmsMode = CMSPortletMode.HOME;
+  
   public UICMSPortlet() throws Exception {
     addChild(UICMSManagement.class, null, null).setRendered(true);
-    addChild(UIPopupAction.class, null, "UIPollPopupAction");
+    addChild(UIPopupAction.class, null, "UICMSPopupAction");
+    
+    
+    addChild(UICategoriesProduct.class, null, null);
+    addChild(UIProductComponent.class, null, null);
+    
+  }
+  // set/get bean
+  public CMSPortletMode getCmsMode() {
+    return cmsMode;
   }
 
-  public void processRender(WebuiApplication app, WebuiRequestContext context) throws Exception {
-    PortletRequestContext portletReqContext = (PortletRequestContext) context;
-    portletMode = portletReqContext.getApplicationMode();
-    if (portletMode == PortletMode.VIEW) {
-      getChild(UICMSManagement.class).setRendered(false);
-    } else if (portletMode == PortletMode.EDIT) {
-    }
-    super.processRender(app, context);
+  public void setCmsMode(CMSPortletMode cmsMode) {
+    this.cmsMode = cmsMode;
+  }
+
+  public void setAdmin(boolean isAdmin) {
+    this.isAdmin = isAdmin;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
   public boolean isAdmin() {
@@ -80,8 +96,42 @@ public class UICMSPortlet extends UIPortletApplication {
   }
 
   public String getFromSevice() {
-	  CMSService cmsService = (CMSService) ExoContainerContext.getCurrentContainer().getComponentInstanceOfType(CMSService.class);
-	  return cmsService.getContentTest();
+    CMSService cmsService = (CMSService) ExoContainerContext.getCurrentContainer().getComponentInstanceOfType(CMSService.class);
+    return cmsService.getContentTest();
+  }
+
+  public void processRender(WebuiApplication app, WebuiRequestContext context) throws Exception {
+    PortletRequestContext portletReqContext = (PortletRequestContext) context;
+    portletMode = portletReqContext.getApplicationMode();
+    if (portletMode == PortletMode.VIEW) {
+      getChild(UICMSManagement.class).setRendered(false);
+      getChild(UIPopupAction.class).setRendered(true);
+
+      getChild(UICategoriesProduct.class).setRendered(true);
+      getChild(UIProductComponent.class).setRendered(true);
+      
+      
+    } else if (portletMode == PortletMode.EDIT) {
+      getChild(UICMSManagement.class).setRendered(true);
+      
+    }
+    super.processRender(app, context);
+  }
+
+  public void processRenderControler() {
+    if(cmsMode.equals(CMSPortletMode.HOME)) {
+      //TODO rendering home page
+    } else if(cmsMode.equals(CMSPortletMode.PRD_LIST)) {
+      //TODO rendering list of product
+    } else if(cmsMode.equals(CMSPortletMode.PRD_DETAIL)) {
+      //TODO rendering product detail
+    
+    } else if(cmsMode.equals(CMSPortletMode.SEARCH)) {
+      //TODO rendering search advanced
+    } else if(cmsMode.equals(CMSPortletMode.BUY_BUILDER)) {
+      //TODO rendering buy building
+    }
+    
   }
 
   protected void hasGroupAdminOfGatein() {

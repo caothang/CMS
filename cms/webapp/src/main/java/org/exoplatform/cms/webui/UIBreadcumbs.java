@@ -1,5 +1,5 @@
-/***************************************************************************
- * Copyright (C) 2003-2010 BigB.
+/*
+ * Copyright (C) 2003-2012 BigB.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License
@@ -13,32 +13,20 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see<http://www.gnu.org/licenses/>.
- ***************************************************************************/
+ */
 package org.exoplatform.cms.webui;
 
-import org.exoplatform.cms.form.BaseCMSForm;
 import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
 
 /**
- * Created by The BigB 
- * Author : Vu Duy Tu 
- *          tu.duy@exoplatform.com 
- * Jun 25, 2010, 3:32:09 PM
+ * Created by The BigB
+ * Author : Vu Duy Tu
+ *          duytucntt@gmail.com
+ * Oct 8, 2012  
  */
-
 @ComponentConfig(
-    lifecycle = UIFormLifecycle.class,
-    template = "app:/templates/cms/webui/UICMSManagement.gtmpl",
-    events = {
-    }
+                 template = "app:/templates/cms/webui/UIBreadcumbs.gtmpl"
 )
-public class UICMSManagement extends BaseCMSForm {
-
-  public UICMSManagement() throws Exception {
-    if (this.getId() == null)
-      this.setId("UICMSManagement");
-  }
-
+public class UIBreadcumbs extends BaseCMSContainer {
 
 }

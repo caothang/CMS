@@ -21,10 +21,10 @@ import java.util.Collection;
 import java.util.List;
 
 import org.exoplatform.cms.Utils;
-import org.exoplatform.commons.utils.ListAccess;
 import org.exoplatform.cms.common.UserHelper;
 import org.exoplatform.cms.common.webui.UIPopupAction;
 import org.exoplatform.cms.common.webui.UIPopupContainer;
+import org.exoplatform.commons.utils.ListAccess;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;

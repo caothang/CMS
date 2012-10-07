@@ -1,5 +1,0 @@
-<div class="$uicomponent.id">
-	<% uiform.begin() ; %>
-		chua co j ca
-	<% uiform.end(); %>
-</div>
