@@ -16,24 +16,23 @@
  */
 package org.exoplatform.cms.webui;
 
+import org.exoplatform.cms.form.UIQuickSearchForm;
 import org.exoplatform.webui.config.annotation.ComponentConfig;
 
 /**
- * Created by The BigB
- * Author : Vu Duy Tu
- *          duytucntt@gmail.com
- * Oct 8, 2012  
+ * Created by The BigB.
+ * Author : Nguyen Cao Thang
+ *          chuasonlam8484@gmail.com
+ * Oct 16, 2012  
  */
-
 @ComponentConfig(
-                 template = "app:/templates/cms/webui/UISubNavigation.gtmpl"
+                 template = "app:/templates/cms/webui/UIBannerContainer.gtmpl"
                )
-public class UISubNavigation extends BaseCMSContainer{
-  public UISubNavigation() {
-   
+public class UIBannerContainer extends BaseCMSContainer {
+  
+  public UIBannerContainer() throws Exception {
+    addChild(UISubNavigation.class, null, null);
+    addChild(UIQuickSearchForm.class, null, null);
   }
 
-
 }
-
-

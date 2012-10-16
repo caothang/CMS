@@ -24,7 +24,10 @@ import javax.portlet.PortletMode;
 import org.exoplatform.cms.Utils;
 import org.exoplatform.cms.common.UserHelper;
 import org.exoplatform.cms.common.webui.UIPopupAction;
+import org.exoplatform.cms.form.UIQuickSearchForm;
 import org.exoplatform.cms.service.CMSService;
+import org.exoplatform.cms.webui.UIBannerContainer;
+import org.exoplatform.cms.webui.UISubNavigation;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.services.security.ConversationState;
@@ -56,6 +59,7 @@ public class UICMSBannerPortlet extends UIPortletApplication {
 
   private PortletMode portletMode;
   public UICMSBannerPortlet() throws Exception {
+    addChild(UIBannerContainer.class, null, null);
     addChild(UIPopupAction.class, null, "UICMSBannerPopupAction");
   }
 
@@ -63,7 +67,9 @@ public class UICMSBannerPortlet extends UIPortletApplication {
     PortletRequestContext portletReqContext = (PortletRequestContext) context;
     portletMode = portletReqContext.getApplicationMode();
     if (portletMode == PortletMode.VIEW) {
+      getChild(UIBannerContainer.class).setRendered(true);
     } else if (portletMode == PortletMode.EDIT) {
+      getChild(UIBannerContainer.class).setRendered(false);
     }
     super.processRender(app, context);
   }

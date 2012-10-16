@@ -38,7 +38,7 @@ import org.exoplatform.webui.form.UIFormStringInput;
 
 @ComponentConfig(
                  lifecycle = UIFormLifecycle.class,
-                 template = "app:/templates/cms/webui/UIQuickSearchForm.gtmpl",
+                 template = "app:/templates/cms/webui/form/UIQuickSearchForm.gtmpl",
                  events = {
                    @EventConfig(listeners = UIQuickSearchForm.SearchActionListener.class),      
                    @EventConfig(listeners = UIQuickSearchForm.AdvancedSearchActionListener.class)      
@@ -60,6 +60,7 @@ public class UIQuickSearchForm extends BaseCMSForm {
     selectBox.setHTMLAttribute("class", "select");
     
     addUIFormInput(stringInput);
+    addUIFormInput(selectBox);
     // TODO Auto-generated constructor stub
   }
   
