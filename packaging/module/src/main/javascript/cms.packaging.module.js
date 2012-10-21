@@ -54,6 +54,8 @@ function getModule(params) {
     new Project("org.hoahong.cms", "cms.cms.webapp", "war", module.version) .
     addDependency(new Project("org.hoahong.cms", "cms.cms.service", "jar",  module.version));
   module.cms.deployName = "cms";
+  module.cmsSkin = new Project("org.hoahong.cms", "cms.cms.skin", "war", module.version);
+  module.cmsSkin.deployName = "cmsSkin";
 
   // KS we resources and services
   module.web = {}

@@ -12,5 +12,6 @@
   <modules>
     <module>service</module>
     <module>webapp</module>
+    <module>cmsSkin</module>
   </modules>
 </project>

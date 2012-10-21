@@ -24,22 +24,16 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.gatein.org/xml/ns/gatein_resources_1_2 http://www.gatein.org/xml/ns/gatein_resources_1_2"
     xmlns="http://www.gatein.org/xml/ns/gatein_resources_1_2">
-
+  
   <portlet-skin>
     <application-name>cms</application-name>
     <portlet-name>CMSPortlet</portlet-name>
     <skin-name>Default</skin-name>
     <css-path>/skin/DefaultSkin/webui/Stylesheet.css</css-path>
+    <overwrite>true</overwrite>
     <css-priority>1</css-priority>
   </portlet-skin>
   
-  <portlet-skin>
-    <application-name>cmsbanner</application-name>
-    <portlet-name>CMSBannerPortlet</portlet-name>
-    <skin-name>Default</skin-name>
-    <css-path>/skin/DefaultSkin/webui/Stylesheet.css</css-path>
-    <css-priority>1</css-priority>
-  </portlet-skin>
   
   <javascript>
     <param>

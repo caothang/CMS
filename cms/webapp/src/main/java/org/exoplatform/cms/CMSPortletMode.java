@@ -36,6 +36,8 @@ public class CMSPortletMode extends PortletMode {
   public final static CMSPortletMode SEARCH = new CMSPortletMode ("SearchAdvanced");
 
   public final static CMSPortletMode BUY_BUILDER = new CMSPortletMode ("BuyBuilder");
+
+  public final static CMSPortletMode ADMIN_PANEL = new CMSPortletMode ("adminPanel");
   
   
   

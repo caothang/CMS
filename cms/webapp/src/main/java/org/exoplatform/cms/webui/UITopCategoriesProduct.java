@@ -16,7 +16,11 @@
  */
 package org.exoplatform.cms.webui;
 
+import org.exoplatform.cms.CMSPortletMode;
+import org.exoplatform.cms.webui.portlet.UICMSPortlet;
 import org.exoplatform.webui.config.annotation.ComponentConfig;
+import org.exoplatform.webui.event.Event;
+import org.exoplatform.webui.event.EventListener;
 
 /**
  * Created by The BigB
@@ -25,8 +29,22 @@ import org.exoplatform.webui.config.annotation.ComponentConfig;
  * Oct 8, 2012  
  */
 @ComponentConfig(
-                 template = "app:/templates/cms/webui/UITopCategoriesProduct.gtmpl"
+    template = "app:/templates/cms/webui/UITopCategoriesProduct.gtmpl"
 )
 public class UITopCategoriesProduct extends BaseCMSContainer {
 
+  
+  
+  static public class ReLoadPortletEventActionListener extends EventListener<UITopCategoriesProduct> {
+    public void execute(Event<UITopCategoriesProduct> event) throws Exception {
+      UITopCategoriesProduct product = event.getSource();
+      UICMSPortlet portlet = product.getAncestorOfType(UICMSPortlet.class);
+      portlet.setCmsMode(CMSPortletMode.PRD_LIST);
+      UIProductContainer prContainer = portlet.findFirstComponentOfType(UIProductContainer.class);
+      prContainer.setTypeRender("");
+      
+      
+      
+    }
+  }
 }

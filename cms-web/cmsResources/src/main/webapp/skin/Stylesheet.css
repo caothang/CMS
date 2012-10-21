@@ -1,3 +1,4 @@
+@import url('UIbanner/Stylesheet.css') ;
 /**************************** UIPopupInfoMenu *********************************/
 
 .UIPopupInfoMenu ul,li {
@@ -82,3 +83,5 @@
 	-webkit-user-select: none;
 	-o-user-select: none;
 }
+
+

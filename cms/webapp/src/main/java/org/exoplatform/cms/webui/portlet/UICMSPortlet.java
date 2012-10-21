@@ -16,10 +16,12 @@
  ***************************************************************************/
 package org.exoplatform.cms.webui.portlet;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.portlet.PortletMode;
+import javax.servlet.ServletContext;
 
 import org.exoplatform.cms.CMSPortletMode;
 import org.exoplatform.cms.Utils;
@@ -31,6 +33,7 @@ import org.exoplatform.cms.webui.UICategoriesProduct;
 import org.exoplatform.cms.webui.UIProductComponent;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.portal.config.UserACL;
+import org.exoplatform.portal.resource.SkinService;
 import org.exoplatform.services.security.ConversationState;
 import org.exoplatform.services.security.Identity;
 import org.exoplatform.services.security.IdentityConstants;
@@ -110,7 +113,7 @@ public class UICMSPortlet extends UIPortletApplication {
       getChild(UICategoriesProduct.class).setRendered(true);
       getChild(UIProductComponent.class).setRendered(true);
       
-      
+      processRenderControler();
     } else if (portletMode == PortletMode.EDIT) {
       getChild(UICMSManagement.class).setRendered(true);
       
@@ -130,6 +133,8 @@ public class UICMSPortlet extends UIPortletApplication {
       //TODO rendering search advanced
     } else if(cmsMode.equals(CMSPortletMode.BUY_BUILDER)) {
       //TODO rendering buy building
+    } else if(cmsMode.equals(CMSPortletMode.ADMIN_PANEL)) {
+      //TODO rendering administrator panel
     }
     
   }

@@ -42,6 +42,11 @@ public class UIProductContainer extends BaseCMSContainer{
     filter.setOrderBy(ProductFilter.ODERBY.NAME.getName());
     this.filter = filter;
   }
+
+  public void setTypeRender(String string) {
+    // TODO Auto-generated method stub
+    
+  }
   
   
   

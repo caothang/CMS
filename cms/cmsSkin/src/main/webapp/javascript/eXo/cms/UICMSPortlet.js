@@ -1,7 +1,6 @@
 if(!eXo.cms){
 	eXo.cms = {} ;
 }
-function UICMSPortlet() {};
 
 function UICMSPortlet() {
 	this.obj = null;
@@ -56,4 +55,4 @@ UICMSPortlet.prototype.expandCollapse = function(obj) {
 	}
 } ;
 
-eXo.poll.UICMSPortlet = new UICMSPortlet() ;
+eXo.cms.UICMSPortlet = new UICMSPortlet() ;
