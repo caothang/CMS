@@ -4,6 +4,7 @@
   <owner-id>classic</owner-id>
   <priority>1</priority>
   <page-nodes>
+
     <node>
       <uri>home</uri>
       <name>home</name>

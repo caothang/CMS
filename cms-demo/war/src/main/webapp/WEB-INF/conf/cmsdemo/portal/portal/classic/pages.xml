@@ -26,6 +26,24 @@
   </page>
  
   <page>
+    <name>cmsbanner</name>
+    <title>CMS Banner</title>
+    <access-permissions>Everyone</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <portlet-application>
+      <portlet>
+        <application-ref>cms</application-ref>
+        <portlet-ref>CMSBannerPortlet</portlet-ref>
+      </portlet>
+      <title>CMS Portlet</title>
+      <access-permissions>Everyone</access-permissions>      
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>false</show-application-state>
+      <show-application-mode>false</show-application-mode>
+    </portlet-application>
+  </page>
+
+  <page>
     <name>cms</name>
     <title>CMS</title>
     <access-permissions>Everyone</access-permissions>
