@@ -1,0 +1,10 @@
+<div id="$uicomponent.id" class="UICMSNavigationPortlet">
+<%
+	List children = uicomponent.getChildren() ;
+	for(component in children) {
+		if(component.isRendered()){
+			uicomponent.renderChild(component.getClass()) ; 
+		}
+	}
+	%>
+</div>

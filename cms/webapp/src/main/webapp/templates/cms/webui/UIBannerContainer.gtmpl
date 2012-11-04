@@ -1,4 +1,4 @@
-<div id="$uicomponent.id" class="UIBannerContainer">
+<div id="$uicomponent.id" class="UIBannerContainer ClearFix">
 	<div class="UILeftBanner">
 		<a class="Logo"></a>
 	</div>

@@ -33,6 +33,15 @@
     <overwrite>true</overwrite>
     <css-priority>1</css-priority>
   </portlet-skin>
+
+  <portlet-skin>
+    <application-name>cms</application-name>
+    <portlet-name>UICMSNavigationPortlet</portlet-name>
+    <skin-name>Default</skin-name>
+    <css-path>/skin/DefaultSkin/webui/UICMSNavigationPortlet/Stylesheet.css</css-path>
+    <overwrite>true</overwrite>
+    <css-priority>1</css-priority>
+  </portlet-skin>
   
   
   <javascript>

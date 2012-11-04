@@ -1,1 +1,17 @@
-UICategoriesProduct.gtmpl
+<%
+ import org.exoplatform.cms.service.CategoryProduct;
+ List catPro = uicomponent.getCategoriesProduct();
+ for(cate in catPro) {
+%>
+
+<div>
+ <div title="lv1"><%=cate.getName()%>></div>
+		 <%
+		 	List catSubPro = uicomponent.getSubCategoriesProduct(cate.getId());
+		 	for(cateSub in catSubPro) {
+		 %>
+		 <div title="lv2"><a href="<%=uicomponent.event("OpenCate", cateSub.getId());%>"><%=cateSub.getName()%></a></div>
+	<% 	} %>
+</div>
+
+<% } %>

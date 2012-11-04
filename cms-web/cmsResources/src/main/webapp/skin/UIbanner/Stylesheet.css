@@ -1,5 +1,48 @@
 
 .UICMSBannerPortlet {
-  border: solid 1px red;
-
+  border: solid 1px blue;
+  background: #fff;
 }
+
+.UIBannerContainer {
+	width: 960px;
+	margin: auto;	
+}
+
+.UIBannerContainer .UILeftBanner {
+	float: left;
+}
+
+.UILeftBanner .Logo {
+	background: url("background/logo281x64.gif") no-repeat left bottom;	
+	width: 320px;
+	height: 85px;
+	display: block;
+}
+
+.UIBannerContainer .UIRightBanner {
+	width: 640px;
+	float:left;
+}
+
+
+.UIBannerContainer .UISubNavigation {
+	width: 640px;
+}
+
+
+.UIBannerContainer .UISubNavigation .NavigationContent {
+	width: 400px;
+	float: right;
+}
+
+.UISubNavigation ul {
+	padding: 0px;
+	margin: 8px 0px 0px 0px;
+}
+
+.UISubNavigation ul li {
+	float: left;
+	padding: 0px 5px;
+}
+

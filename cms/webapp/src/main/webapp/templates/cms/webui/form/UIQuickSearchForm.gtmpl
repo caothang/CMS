@@ -18,7 +18,6 @@ def catProducts = uicomponent.getCategoryProducts();
 								<% uiform.renderField("SearchKey") %>
 						</div>
 						<span class="button01"><span class="inner"><input type="submit" value="Tìm kiếm" title="Tìm kiếm" class="btnSrch"></span></span>
-						<span class="button01"><span class="inner"><input type="button" value="Tìm kiếm nâng cao" title="Tìm kiếm nâng cao" class="btnSrchAdv"></span></span>
 					</div><!-- end #search -->
 		
 

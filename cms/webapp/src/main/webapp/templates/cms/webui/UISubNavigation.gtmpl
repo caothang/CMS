@@ -1,3 +1,10 @@
-<div id="$uicomponent.id" class="UISubNavigation">
-UISubNavigation
+<div id="$uicomponent.id" class="UISubNavigation ClearFix">
+		<ul class="NavigationContent ClearFix">
+			<li class="fst active"><a href="#">Trang chủ</a></li>
+			<li><a href="#">Giới thiệu</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="#">Bảo hành</a></li>
+			<li><a href="#">Tải báo giá</a></li>
+			<li class="lst"><a href="#">Liên hệ</a></li>
+		</ul><!-- end .nav-top -->
 </div>

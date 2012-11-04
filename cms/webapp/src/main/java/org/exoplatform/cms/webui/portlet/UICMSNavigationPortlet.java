@@ -25,6 +25,7 @@ import org.exoplatform.cms.Utils;
 import org.exoplatform.cms.common.UserHelper;
 import org.exoplatform.cms.common.webui.UIPopupAction;
 import org.exoplatform.cms.service.CMSService;
+import org.exoplatform.cms.webui.UICMSNavigationContainer;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.services.security.ConversationState;
@@ -47,7 +48,7 @@ import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
 
 @ComponentConfig(
     lifecycle = UIApplicationLifecycle.class,
-    template = "app:/templates/cms/webui/portlet/UINavigationPortlet.gtmpl"
+    template = "app:/templates/cms/webui/portlet/UICMSNavigationPortlet.gtmpl"
 )
 public class UICMSNavigationPortlet extends UIPortletApplication {
   private boolean isAdmin = false;
@@ -56,14 +57,16 @@ public class UICMSNavigationPortlet extends UIPortletApplication {
 
   private PortletMode portletMode;
   public UICMSNavigationPortlet() throws Exception {
-    addChild(UIPopupAction.class, null, "UICMSNavigationPopupAction");
+    addChild(UICMSNavigationContainer.class, null, null).setRendered(false);
   }
 
   public void processRender(WebuiApplication app, WebuiRequestContext context) throws Exception {
     PortletRequestContext portletReqContext = (PortletRequestContext) context;
     portletMode = portletReqContext.getApplicationMode();
     if (portletMode == PortletMode.VIEW) {
+      getChild(UICMSNavigationContainer.class).setRendered(true);
     } else if (portletMode == PortletMode.EDIT) {
+      getChild(UICMSNavigationContainer.class).setRendered(false);
     }
     super.processRender(app, context);
   }

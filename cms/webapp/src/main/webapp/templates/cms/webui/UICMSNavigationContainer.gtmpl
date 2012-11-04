@@ -1,0 +1,17 @@
+<div id="$uicomponent.id" class="UICMSNavigationContainer">
+  <div class="UIMenuContainer">
+ 
+ 
+  </div>
+ 
+  <div class="UIFollowUs">
+	 	<ul class="Follow">
+			<li class="fst"><a href="#"><img src="/cmsSkin/skin/DefaultSkin/webui/images/sns01_fb.gif" title="Facebook" alt="Facebook"></a></li>
+			<li><a href="#"><img src="/cmsSkin/skin/DefaultSkin/webui/images/sns01_twitter.gif" title="Twitter" alt="Twitter"></a></li>
+			<li><a href="#"><img src="/cmsSkin/skin/DefaultSkin/webui/images/sns01_email.gif" title="Email" alt="Email"></a></li>
+			<li><a href="#"><img src="/cmsSkin/skin/DefaultSkin/webui/images/sns01_google.gif" title="Google" alt="Google"></a></li>
+			<li><a href="#"><img src="/cmsSkin/skin/DefaultSkin/webui/images/sns01_youtube.gif" title="Youtube" alt="Youtube"></a></li>
+			<li class="lst"><a href="#"><img src="/cmsSkin/skin/DefaultSkin/webui/images/sns01_flickr.gif" title="Flickr" alt="Flickr"></a></li>
+		</ul>
+  </div>
+</div>
